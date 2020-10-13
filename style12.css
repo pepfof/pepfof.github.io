@@ -1,0 +1,120 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #bbcacc;
+    background-filter: brightness(10%);
+}
+
+.contentbody {
+    	font-family: 'titillium web','calibri','ubuntu';
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.text {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("bcmc.jpg");
+    background-repeat: no-repeat;
+    width: 80vw;
+    border: 2px solid black;
+    margin-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 5%;
+    word-wrap: break-word;
+    margin-top: 2%;
+    text-shadow: white 1px 1px 0, white -1px -1px 0,
+                 white -1px 1px 0, white 1px -1px 0;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 0px 17px 8px #000000 inset;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 0;
+  padding: 1%;
+}
+
+.header {
+    font-size: 450%;
+    word-wrap: break-word;
+    display: flex;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+h1 {
+  text-shadow:
+    1px 1px 0 hsl(20,100%,50%),
+    2px 2px 0 hsl(20,100%,50%),
+    3px 3px 0 hsl(35,100%,50%),
+    4px 4px 0 hsl(35,100%,50%),
+    5px 5px 0 hsl(45,100%,50%),
+    6px 6px 0 hsl(45,100%,55%),
+    7px 7px 0 hsl(55,100%,60%),
+    8px 8px 0 hsl(55,100%,65%);
+  color: hsl(0,100%,40%);
+  transition: all 1s;
+}
+
+h1:hover {
+  text-shadow:
+    1px -1px 0 hsl(290,100%,40%),
+    2px -2px 0 hsl(290,100%,40%),
+    3px -3px 0 hsl(280,100%,60%),
+    4px -4px 0 hsl(280,100%,60%),
+    5px -5px 0 hsl(270,100%,75%),
+    6px -6px 0 hsl(270,100%,80%),
+    7px -7px 0 hsl(260,100%,85%),
+    8px -8px 0 hsl(260,100%,90%);
+  color: hsl(300,100%,30%);
+}
+
+.button1 {
+            color: white;
+            text-shadow: none;
+            text-decoration: none;
+            display: inline-block;
+            border-left: 2px solid gray;
+            border-right: 2px solid black;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid black;
+            background-color: rgba(80,80,80,1);
+            padding-bottom:1% ;
+            padding-left:1% ;
+            padding-right:1% ;
+            padding-top:1% ;
+            width: 60%;
+            text-align:center;
+            text-underline-position: below;
+            text-indent: inherit;
+            text-rendering: optimizeSpeed;
+            text-align-last: center;
+            font-size: 110%;
+	    font-weight: bolder;
+            transition: all;
+            margin-top: 1%;
+	    margin-bottom: 1%;
+	    display: inline-block;
+	    border-radius: 1%
+	}
