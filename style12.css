@@ -3,8 +3,7 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #bbcacc;
-    background-filter: brightness(10%);
+    background-color: #37455f;
 }
 
 .contentbody {
@@ -45,14 +44,8 @@ html {
                  white -1px 1px 0, white 1px -1px 0;
     color: black;
     font-weight: bold;
-    box-shadow: 0px 0px 17px 8px #000000 inset;
-}
-
-.blur {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  margin: 0;
-  padding: 1%;
+    box-shadow: 0px 0px 17px 1px #000000 inset;
+    padding: 2%;
 }
 
 .header {
@@ -65,30 +58,49 @@ html {
 
 h1 {
   text-shadow:
-    1px 1px 0 hsl(20,100%,50%),
-    2px 2px 0 hsl(20,100%,50%),
-    3px 3px 0 hsl(35,100%,50%),
-    4px 4px 0 hsl(35,100%,50%),
-    5px 5px 0 hsl(45,100%,50%),
-    6px 6px 0 hsl(45,100%,55%),
-    7px 7px 0 hsl(55,100%,60%),
-    8px 8px 0 hsl(55,100%,65%);
-  color: hsl(0,100%,40%);
+    1px 1px 0 #000000,
+    2px 2px 0 #000000,
+    3px 3px 0 #000000,
+    4px 4px 0 #000000,
+    5px 5px 0 #000000,
+    6px 6px 0 #000000;
+  color: #FFFFFF;
   transition: all 1s;
 }
 
 h1:hover {
   text-shadow:
-    1px -1px 0 hsl(290,100%,40%),
-    2px -2px 0 hsl(290,100%,40%),
-    3px -3px 0 hsl(280,100%,60%),
-    4px -4px 0 hsl(280,100%,60%),
-    5px -5px 0 hsl(270,100%,75%),
-    6px -6px 0 hsl(270,100%,80%),
-    7px -7px 0 hsl(260,100%,85%),
-    8px -8px 0 hsl(260,100%,90%);
-  color: hsl(300,100%,30%);
+    1px -1px 0 #000000,
+    2px -2px 0 #000000,
+    3px -3px 0 #000000,
+    4px -4px 0 #000000,
+    5px -5px 0 #000000,
+    6px -6px 0 #000000;
+  color: #FFFFFF;
 }
+
+/*h1 {
+  text-shadow:
+    1px 1px 0 #1974D2,
+    2px 2px 0 #1A4780,
+    3px 3px 0 #1A4780,
+    4px 4px 0 #1974D2,
+    5px 5px 0 #1A4780,
+    6px 6px 0 #1974D2;
+  color: #FFFFFF;
+  transition: all 1s;
+}
+
+h1:hover {
+  text-shadow:
+    1px -1px 0 #1974D2,
+    2px -2px 0 #1A4780,
+    3px -3px 0 #1A4780,
+    4px -4px 0 #1974D2,
+    5px -5px 0 #1A4780,
+    6px -6px 0 #1974D2;
+  color: #FFFFFF;
+}*/
 
 .button1 {
             color: white;
