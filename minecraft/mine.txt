@@ -1,4 +1,3 @@
-\dirs1.txt
 \config\forestry\common.cfg
 \config\forestry\backpacks.cfg
 \config\forestry\fluids.cfg
@@ -271,8 +270,5 @@
 \mods\DynamicTreesQuark-1.12.2-1.0.6.jar
 \mods\randomconfigs-1.12.2-1.3.2.3.jar
 \mine.txt
-\dirs2.txt
 \dirs.txt
-\mine2.txt
-\mine1.txt
 \generate&upload.sh
