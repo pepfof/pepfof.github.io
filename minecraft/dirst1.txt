@@ -1,51 +1,51 @@
 .
-\config
-\confi\forestry
-\confi\forestr\gamemodes
-\confi\AE2Stuff
-\confi\AE2Stuf\overrides
-\confi\hungeroverhaul
-\confi\dynamictrees
-\confi\spiceoflife
-\confi\advRocketry
-\confi\buildcraft
-\confi\buildcraf\scripts
-\confi\buildcraf\assembly_recipes_pre_mj
-\confi\waila
-\confi\wail\theme
-\confi\InvTweaks
-\confi\InvTweak\trees
-\confi\dsurround
-\confi\sponge
-\confi\spong\worlds
-\confi\spong\world\minecraft
-\confi\spong\world\minecraf\nether
-\confi\spong\world\minecraf\the_end
-\confi\spong\world\minecraf\the_en\DIM1
-\confi\spong\world\minecraf\overworld
-\confi\spong\world\minecraf\overworl\saves
-\confi\spong\world\minecraf\overworl\New World----
-\confi\spong\world\minecraf\overworl\New World-----
-\confi\spong\world\advancedrocketry
-\confi\spong\world\advancedrocketr\planet
-\confi\spong\world\advancedrocketr\space
-\confi\spong\world\advancedrocketr\spac\DIM-2
-\confi\spong\world\advancedrocketr\asteroid
-\confi\spong\world\appliedenergistics2
-\confi\spong\world\appliedenergistics\storage_cell
-\confi\spong\world\appliedenergistics\storage_cel\DIM2
-\confi\spong\world\biomesoplenty
-\confi\spong\world\biomesoplent\nether
-\confi\spong\world\biomesoplent\nethe\DIM-1
-\confi\biomesoplenty
-\confi\biomesoplent\biomes
-\confi\biomesoplent\biome\defaults
-\confi\biomesoplent\biome\default\vanilla
-\confi\biomesoplent\biome\default\biomesoplenty
-\confi\AppliedEnergistics2
-\confi\mirage
-\confi\mirag\configs
-\confi\jei
-\confi\randomconfigs
-\confi\randomconfig\defaultconfigs
-\mods
+ \config
+ \confi \forestry
+ \confi \forestr \gamemodes
+ \confi \AE2Stuff
+ \confi \AE2Stuf \overrides
+ \confi \hungeroverhaul
+ \confi \dynamictrees
+ \confi \spiceoflife
+ \confi \advRocketry
+ \confi \buildcraft
+ \confi \buildcraf \scripts
+ \confi \buildcraf \assembly_recipes_pre_mj
+ \confi \waila
+ \confi \wail \theme
+ \confi \InvTweaks
+ \confi \InvTweak \trees
+ \confi \dsurround
+ \confi \sponge
+ \confi \spong \worlds
+ \confi \spong \world \minecraft
+ \confi \spong \world \minecraf \nether
+ \confi \spong \world \minecraf \the_end
+ \confi \spong \world \minecraf \the_en \DIM1
+ \confi \spong \world \minecraf \overworld
+ \confi \spong \world \minecraf \overworl \saves
+ \confi \spong \world \minecraf \overworl \New World----
+ \confi \spong \world \minecraf \overworl \New World-----
+ \confi \spong \world \advancedrocketry
+ \confi \spong \world \advancedrocketr \planet
+ \confi \spong \world \advancedrocketr \space
+ \confi \spong \world \advancedrocketr \spac \DIM-2
+ \confi \spong \world \advancedrocketr \asteroid
+ \confi \spong \world \appliedenergistics2
+ \confi \spong \world \appliedenergistics \storage_cell
+ \confi \spong \world \appliedenergistics \storage_cel \DIM2
+ \confi \spong \world \biomesoplenty
+ \confi \spong \world \biomesoplent \nether
+ \confi \spong \world \biomesoplent \nethe \DIM-1
+ \confi \biomesoplenty
+ \confi \biomesoplent \biomes
+ \confi \biomesoplent \biome \defaults
+ \confi \biomesoplent \biome \default \vanilla
+ \confi \biomesoplent \biome \default \biomesoplenty
+ \confi \AppliedEnergistics2
+ \confi \mirage
+ \confi \mirag \configs
+ \confi \jei
+ \confi \randomconfigs
+ \confi \randomconfig \defaultconfigs
+ \mods

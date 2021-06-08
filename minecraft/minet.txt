@@ -271,6 +271,8 @@
 ./mods/randomconfigs-1.12.2-1.3.2.3.jar
 ./mine.txt
 ./dirs.txt
+./dirst1.txt
 ./generate&upload.sh
 ./dirst.txt
 ./minet.txt
+./minet1.txt
