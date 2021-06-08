@@ -271,6 +271,8 @@
 \mod\DynamicTreesQuark-1.12.2-1.0.6.jar
 \mod\randomconfigs-1.12.2-1.3.2.3.jar
 \mine.txt
+\dirs2.txt
 \dirs.txt
+\mine2.txt
 \mine1.txt
 \generate&upload.sh
