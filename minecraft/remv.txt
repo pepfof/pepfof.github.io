@@ -1,0 +1,3 @@
+\config\energycontrol.cfg
+\mods\Mirage.jar
+\mods\spongeforge-1.12.2-2838-7.3.0.jar
