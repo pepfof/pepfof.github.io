@@ -226,6 +226,7 @@
 \mods\DynamicTreesBOP-1.12.2-1.5.1.jar
 \mods\buildcraft-all-7.99.24.8.jar
 \mods\foamfix-0.10.14-1.12.2.jar
+\mods\AromaBackup-1.12.2-2.1.1.4.jar
 \mods\appliedenergistics2-rv6-stable-7.jar
 \mods\StorageDrawers-1.12.2-5.4.0.jar
 \mods\ae2stuff-0.7.0.4-mc1.12.2.jar
@@ -235,6 +236,7 @@
 \mods\AutoRegLib-1.3-32.jar
 \mods\Thaumcraft-1.12.2-6.1.BETA26.jar
 \mods\BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar
+\mods\Aroma1997Core-1.12.2-2.0.0.2.jar
 \mods\Mantle-1.12-1.3.3.55.jar
 \mods\InventoryTweaks-1.64+dev.151.jar
 \mods\CTM-MC1.12.2-1.0.2.31.jar
@@ -255,16 +257,20 @@
 \mods\DynamicSurroundings-1.12.2-3.6.1.0.jar
 \mods\SpiceOfLife-mc1.12-1.3.12.jar
 \mods\jei_1.12.2-4.16.1.301.jar
+\mods\railcraft-12.0.0.jar
 \mods\XaerosWorldMap_1.14.1_Forge_1.12.jar
 \mods\LibVulpes-1.12.2-0.4.2-83-universal.jar
 \mods\DoggyTalents-1.12.2-1.15.1.6.jar
 \mods\OpenComputers-MC1.12.2-1.7.5.192.jar
+\mods\authmod-3.2.jar
 \mods\AppleCore-mc1.12.2-3.4.0.jar
 \mods\DynamicTreesTC-1.12.2-1.4.2.jar
 \mods\DynamicTreesForestry-1.12.2-1.0.10.jar
 \mods\furniture-6.3.1-1.12.2.jar
+\mods\Headcrumbs-1.12.2-2.0.5.17.jar
 \mods\OreLib-1.12.2-3.6.0.1.jar
 \mods\gendustry-1.6.5.8-mc1.12.2.jar
+\mods\WanionLib-1.12.2-2.5.jar
 \mods\Pam's+HarvestCraft+1.12.2zg.jar
 \mods\AdvancedRocketry-1.12.2-1.7.0-232-universal.jar
 \mods\Baubles-1.12-1.5.2.jar
@@ -274,6 +280,7 @@
 \mods\chiselsandbits-14.33.jar
 \mods\Kiwi-1.12.2-0.5.3.32.jar
 \mods\collective-1.12.2-2.26.jar
+\mods\UniDict-1.12.2-3.0.8.jar
 \mods\Waystones_1.12.2-4.1.0.jar
 \mods\DivineRPG-1.7.1.jar
 \mods\DynamicTreesQuark-1.12.2-1.0.6.jar
