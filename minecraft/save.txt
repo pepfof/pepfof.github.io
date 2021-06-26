@@ -3,3 +3,4 @@
 \name.txt
 \ram.txt
 \config\simplelogin.cfg
+\sl_password.txt

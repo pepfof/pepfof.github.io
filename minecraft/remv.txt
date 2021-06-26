@@ -1,1 +1,4 @@
 \config\worldborder.cfg
+\mods\authmod-3.2.jar
+\mods\EcologyMod-1.12.2-1.5.1.0.jar
+\mods\EnderIO-1.12.2-5.3.70.jar
