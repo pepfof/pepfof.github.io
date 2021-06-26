@@ -2,3 +2,4 @@
 \optionsof.txt
 \name.txt
 \ram.txt
+\config\simplelogin.cfg
