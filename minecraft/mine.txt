@@ -219,6 +219,7 @@
 \config\harvestcraft.cfg
 \config\morphtool.cfg
 \config\bountifulbaubles.cfg
+\config\ic2\macerator.ini
 \config\thaumcraft_world.cfg
 \mods\extrautils2-1.12-1.9.9.jar
 \mods\EnergyControl-1.12.2-0.1.15.jar

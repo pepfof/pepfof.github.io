@@ -48,4 +48,5 @@
 \config\jei
 \config\randomconfigs
 \config\randomconfigs\defaultconfigs
+\config\ic2
 \mods
