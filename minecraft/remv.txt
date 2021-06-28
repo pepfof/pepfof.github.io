@@ -3,3 +3,4 @@
 \mods\EcologyMod-1.12.2-1.5.1.0.jar
 \mods\EnderIO-1.12.2-5.3.70.jar
 \config\hungeroverhaul\HungerOverhaul.cfg
+\config\IC2.ini
