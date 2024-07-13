@@ -66,7 +66,7 @@ GEM
       strscan
     rouge (4.3.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.77.5)
+    sass-embedded (1.77.8)
       google-protobuf (>= 3.25, < 5.0)
       rake (>= 13)
     strscan (3.1.0)
