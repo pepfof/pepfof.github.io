@@ -1,3 +1,197 @@
 ---
 ---
 @import "main";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+    background-color: #111111;
+    color:#AAAAAA;
+    font-family: "IBM Plex Mono";
+    margin:0px;
+}
+
+.page_content {
+    padding:5px;
+}
+
+
+.navmenu {
+    background-color: #222222;
+    position: sticky;
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,1); 
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,1); 
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+    
+    margin: 0px;
+    top: 0px;
+    width: 100%;
+    /*float: right;*/
+    border-bottom: 5px solid #111111;
+    height:64px;
+    /*padding:5px;*/
+    display: flex
+}
+
+.navmenu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navmenu .logo{
+    margin: auto;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+}
+
+.navmenu .item{
+    background-color: #222222;
+    float: right;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.navmenu .item:hover{
+    background-color: #111111;
+}
+
+.navmenu .item .current{
+    color: orange;
+    width:fit-content;
+    margin:auto;
+
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,1); 
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,1); 
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+.navmenu .item .other{
+    color: darkgray;
+    width:fit-content;
+    margin: auto;
+}
+
+.navmenu .item a{
+    display: block;
+    padding:20px;
+    height: 100%;
+    margin:auto;
+    text-decoration: none;
+}
+
+.render_post{
+    width: 80%;
+    margin: auto;
+}
+
+.render_post .image_main {
+    width: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+    .render_post {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.render_post .title {
+    width: 100%;
+    text-align: right;
+    font-size: 48pt;
+}
+
+.render_post .date {
+    width: 100%;
+    text-align: right;
+    font-size: 24pt;
+}
+
+.post_feed_box {
+    height: 100%; 
+}
+
+.post_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.post_grid_item {
+    flex: 0 1 calc(10% - 20px);
+    /*margin-bottom: 25px;
+    /*margin-right: 1px;*/
+    margin:5px;
+    background-color: #222222;
+
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.4); 
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.4); 
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+
+.post_grid_item:hover {
+    background-color:#333333;
+    transition: all .1s ;
+}
+
+.post_grid_item .title {
+    /*font-family: monospace;*/
+    font-size: 12pt;
+    text-align: right;
+    color: darkgray;
+    text-decoration: none;
+    margin-right: 1px;
+}
+
+.post_grid_item .desc {
+    /*font-family: monospace;*/
+    font-size: 8.5pt;
+    text-align: right;
+    color: dimgray;
+    text-decoration: none;
+    margin-right: 1px;
+}
+
+.post_grid_item img {
+    width: 100%;
+    height: auto;
+}
+
+.post_grid_item a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+@media screen and (max-width: 1900px) {
+    .post_grid_item {
+        flex: 0 1 calc(25% - 10px);
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .post_grid_item {
+        flex: 0 1 calc(33% - 7px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .post_grid_item {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .post_grid_item {
+        flex: 0 1 calc(100%);
+    }
+}

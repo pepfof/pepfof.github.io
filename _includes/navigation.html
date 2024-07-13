@@ -1,5 +1,26 @@
-<nav>
+<nav class = "navmenu">
+
+
+  <ul>
+
+    <li style = "float: left;">
+    <a href="/"  class="logo">
+      <img src="/logo.png">
+    </a>
+    </li>
+
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+
+
+    <li class = "item">
+    {% if page.url == item.link or page.navigation_override == item.link  %}
+      <a href="{{ item.link }}" class = "current">
+    {% else %}
+      <a href="{{ item.link }}" class = "other">
+    {% endif %}
+          {{ item.name }}
+    </a>
+    </li>
     {% endfor %}
-  </nav>
+  </ul>
+</nav>

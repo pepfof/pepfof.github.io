@@ -2,6 +2,7 @@
 layout: default
 title: About
 ---
-# About page
+# About
+There's so much to say about me! I'm so incredibly interesting! Look at all the things i've written out here:
 
-Test about page
+So much!

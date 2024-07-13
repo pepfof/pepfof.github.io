@@ -1,2 +1,6 @@
 collections:
   authors:
+
+exclude: 
+  - post_template.html 
+  - post_generator.py
