@@ -1,26 +1,24 @@
-<nav class = "navmenu">
-
-
-  <ul>
-
-    <li style = "float: left;">
-    <a href="/"  class="logo">
-      <img src="/logo.png">
-    </a>
-    </li>
-
-    {% for item in site.data.navigation %}
-
-
-    <li class = "item">
-    {% if page.url == item.link or page.navigation_override == item.link  %}
-      <a href="{{ item.link }}" class = "current">
-    {% else %}
-      <a href="{{ item.link }}" class = "other">
-    {% endif %}
-          {{ item.name }}
-    </a>
-    </li>
-    {% endfor %}
-  </ul>
-</nav>
+<header class="header">
+  <!-- Logo -->
+  <a href="/" class="logo"><img src = "/logo.png"></a>
+  <!-- Hamburger icon -->
+  <input class="side-menu" type="checkbox" id="side-menu"/>
+  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+  <!-- Menu -->
+  <nav class="nav">
+      <ul class="menu">
+          {% for item in site.data.navigation %}
+          <li>
+            {% if page.url == item.link or page.navigation_override == item.link  %}
+            <a href="{{ item.link }}" class="current">
+              {% else %}
+              <a href="{{ item.link }}" class="other">
+              {% endif %}
+              {{ item.name }}
+              
+            </a>
+          </li>
+          {% endfor %}
+      </ul>
+  </nav>
+</header>
