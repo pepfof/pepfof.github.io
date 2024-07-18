@@ -15,7 +15,7 @@ body {
     //width: calc(80vw);
     margin: auto;
     flex: auto;
-    background: #222222;
+    background: #282828;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -63,27 +63,31 @@ body {
 }
 
 .render_post .info_box{
-    padding: 10px;
+    padding: 0 20px 0 20px;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: flex-start;
-    flex: 1000 1 calc(100vh - (100vh - 128px));
+    align-content: space-between;
+    flex: 1000 10 calc(365px);
 }
 
 .render_post .info_box_main{
-    margin: 5px 10px 5px 30px;
-    flex: 1 0 40%;
+    margin: 0px 0px 0px 0px;
+    flex: 1 0 45%;
+    padding: 20px 20px 20px 20px;
+    //border-bottom: 1px solid #222222;
+    
 }
 
 .render_post .info_box_song{
-    border-radius:24px;
     flex: 1 0 auto;
-    padding:10px;
+    padding:20px;
     width:fit-content;
     overflow: hidden;
-
+    padding: 20px 0px 20px 0px;
+    //border-bottom: 1px solid #222222;
+    border-top: 1px solid #222222;
 }
 
 .render_post .image_box{
