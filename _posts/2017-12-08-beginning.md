@@ -6,7 +6,7 @@ render: /assets/renders/2017_12_08_beginning.png
 thumb: /assets/renders/thumb/thumb-2017_12_08_beginning.png
 title: Beginning
 navigation_override: /
-aspect: 16:9
+aspect: 16/9
 domcol: ^191719
 spotisong: 2pw9RZWZibttZzoFhwjuy6
 ---
@@ -14,7 +14,6 @@ spotisong: 2pw9RZWZibttZzoFhwjuy6
 <!--USER BEGIN 1-->
 
 <!--USER END 1-->
-<img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
 <!--more-->
 <!--USER BEGIN 2-->

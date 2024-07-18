@@ -100,7 +100,7 @@ def calculate_aspect(width: int, height: int) -> str:
         return a if b == 0 else gcd(b, a % b)
 
     if width == height:
-        return "1:1"
+        return "1/1"
 
     if width < height:
         temp = width
@@ -112,7 +112,7 @@ def calculate_aspect(width: int, height: int) -> str:
     x = int(width / divisor) if not temp else int(height / divisor)
     y = int(height / divisor) if not temp else int(width / divisor)
 
-    return f"{x}:{y}"
+    return f"{x}/{y}"
 
 def generate_post(filename:str):
     

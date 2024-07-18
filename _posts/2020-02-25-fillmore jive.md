@@ -6,15 +6,14 @@ render: /assets/renders/2020_02_25_fillmore jive.png
 thumb: /assets/renders/thumb/thumb-2020_02_25_fillmore jive.png
 title: Fillmore Jive
 navigation_override: /
-aspect: 16:9
+aspect: 16/9
 domcol: ^160906
-spotisong: 0906
+spotisong: 2VcswmuA5mj5EATSRhoJzU
 ---
 
 <!--USER BEGIN 1-->
 
 <!--USER END 1-->
-<img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
 <!--more-->
 <!--USER BEGIN 2-->

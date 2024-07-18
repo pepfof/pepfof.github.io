@@ -6,7 +6,7 @@ render: /assets/renders/2018_10_22_red reality.png
 thumb: /assets/renders/thumb/thumb-2018_10_22_red reality.png
 title: Red Reality
 navigation_override: /
-aspect: 16:9
+aspect: 16/9
 domcol: ^54534f
 spotisong: 29BK3FAFBEfhO5w4ZlFrky
 ---
@@ -14,7 +14,6 @@ spotisong: 29BK3FAFBEfhO5w4ZlFrky
 <!--USER BEGIN 1-->
 
 <!--USER END 1-->
-<img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
 <!--more-->
 <!--USER BEGIN 2-->

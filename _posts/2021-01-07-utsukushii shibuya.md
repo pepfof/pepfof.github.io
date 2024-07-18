@@ -6,15 +6,14 @@ render: /assets/renders/2021_01_07_utsukushii shibuya.png
 thumb: /assets/renders/thumb/thumb-2021_01_07_utsukushii shibuya.png
 title: Utsukushii Shibuya
 navigation_override: /
-aspect: 3:4
+aspect: 3/4
 domcol: ^4e5152
-spotisong: 5152
+spotisong: 2hQ6i7d2Fo0bsLxpWBcQIq
 ---
 
 <!--USER BEGIN 1-->
 
 <!--USER END 1-->
-<img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
 <!--more-->
 <!--USER BEGIN 2-->

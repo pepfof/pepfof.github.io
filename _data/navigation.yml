@@ -1,4 +1,4 @@
 - name: Renders
   link: /
-- name: About
-  link: /about.html
+#- name: About
+#  link: /about.html

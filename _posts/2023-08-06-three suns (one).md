@@ -6,15 +6,14 @@ render: /assets/renders/2023_08_06_three suns (one).png
 thumb: /assets/renders/thumb/thumb-2023_08_06_three suns (one).png
 title: Three Suns (One)
 navigation_override: /
-aspect: 1:1
+aspect: 1/1
 domcol: ^580c14
-spotisong: 0c14
+spotisong: 5oZxELatOzq7U9zDYCrep5
 ---
 
 <!--USER BEGIN 1-->
 
 <!--USER END 1-->
-<img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
 <!--more-->
 <!--USER BEGIN 2-->

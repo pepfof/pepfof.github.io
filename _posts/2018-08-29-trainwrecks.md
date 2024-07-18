@@ -6,7 +6,7 @@ render: /assets/renders/2018_08_29_trainwrecks.png
 thumb: /assets/renders/thumb/thumb-2018_08_29_trainwrecks.png
 title: Trainwrecks
 navigation_override: /
-aspect: 16:9
+aspect: 16/9
 domcol: ^95a784
 spotisong: 4i96fZNLDzeYUQU9QeK9Ai
 ---
@@ -14,7 +14,6 @@ spotisong: 4i96fZNLDzeYUQU9QeK9Ai
 <!--USER BEGIN 1-->
 
 <!--USER END 1-->
-<img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
 <!--more-->
 <!--USER BEGIN 2-->

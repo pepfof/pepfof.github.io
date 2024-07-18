@@ -1,16 +1,41 @@
 ---
 layout: default
 ---
-
 <div class = "render_post">
-{% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
-{{ contentArray.first }}
-<div class="title">{{ page.title }}</div>
-<div class="date">{{ page.date | date_to_string }}</div>
-{%if page.spotisong%}
-<iframe src="https://open.spotify.com/embed/track/{{page.spotisong}}?utm_source=generator&theme=0" class ="spotisong_iframe" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-{%endif%}
-<div class="note">
-{{ contentArray.last }}
+    
+    {% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
+    {{ contentArray.first }}
+
+    
+    <div class = "image_box" style="aspect-ratio: auto {{ page.aspect }};">
+        <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
+    </div>
+
+    <div class = "info_box">
+        
+        <div class = "info_box_main">
+        <div class="title">
+            {{ page.title }}
+        </div>
+        <div class="date">
+            {{ page.date | date_to_string }}
+        </div>
+        </div>
+
+        <div class = "info_box_song">
+        {%if page.spotisong%}
+            {%unless page.spotiplaylist%}
+        <iframe src="https://open.spotify.com/embed/track/{{page.spotisong}}?utm_source=generator&theme=0" scrolling="no" class ="spotisong_iframe" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            {%else%}
+        <iframe src="https://open.spotify.com/embed/playlist/{{page.spotisong}}?utm_source=generator&theme=0" scrolling="no" class ="spotisong_iframe" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            {%endunless%}
+        {%endif%}
+        </div>
+
+        <div class="note">
+            {{ contentArray.last }}
+        </div>
+
+    </div>
 </div>
-</div>
+<! https://open.spotify.com/track/?go=1>

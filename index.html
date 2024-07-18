@@ -14,7 +14,7 @@ layout: default
     {%endcomment%}
     <div class="post_grid_item">
         <a href="{{ post.url }}">
-            <img src="{{ post.thumb }}">
+            <img src="{{ post.thumb }}" loading="lazy">
             <div class ="title">{{post.title | truncate: 40, "..." | downcase }}</div>
             <div class ="desc">{{post.date | date_to_string | downcase }}</div>
         </a>

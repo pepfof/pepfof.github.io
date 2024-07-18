@@ -6,15 +6,14 @@ render: /assets/renders/2021_12_30_falling in again.jpg
 thumb: /assets/renders/thumb/thumb-2021_12_30_falling in again.jpg
 title: Falling In Again
 navigation_override: /
-aspect: 4:3
+aspect: 4/3
 domcol: ^010103
-spotisong: 0103
+spotisong: 25Gp0MpGdvrs4hL1u4L2TF
 ---
 
 <!--USER BEGIN 1-->
 
 <!--USER END 1-->
-<img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
 <!--more-->
 <!--USER BEGIN 2-->
