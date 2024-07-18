@@ -8,6 +8,7 @@ title: Alien Aftermath
 navigation_override: /
 aspect: 16:9
 domcol: ^010101
+spotisong: 0101
 ---
 
 <!--USER BEGIN 1-->
@@ -15,6 +16,7 @@ domcol: ^010101
 <!--USER END 1-->
 <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
+<!--more-->
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->

@@ -8,6 +8,7 @@ title: In The Mouth A Desert
 navigation_override: /
 aspect: 16:9
 domcol: ^413f3b
+spotisong: 3f3b
 ---
 
 <!--USER BEGIN 1-->
@@ -15,6 +16,7 @@ domcol: ^413f3b
 <!--USER END 1-->
 <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
+<!--more-->
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->

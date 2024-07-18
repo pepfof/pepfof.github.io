@@ -8,6 +8,7 @@ title: End His Struggle
 navigation_override: /
 aspect: 9:16
 domcol: ^130a03
+spotisong: 0a03
 ---
 
 <!--USER BEGIN 1-->
@@ -15,6 +16,7 @@ domcol: ^130a03
 <!--USER END 1-->
 <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
+<!--more-->
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->

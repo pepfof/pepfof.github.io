@@ -4,3 +4,5 @@ collections:
 exclude: 
   - post_template.html 
   - post_generator.py
+
+excerpt_separator: <!--more-->

@@ -8,6 +8,7 @@ title: Green World
 navigation_override: /
 aspect: 16:9
 domcol: ^323c50
+spotisong: 4hNPMfFHauPIbOKvdYqFt7
 ---
 
 <!--USER BEGIN 1-->
@@ -15,6 +16,7 @@ domcol: ^323c50
 <!--USER END 1-->
 <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
+<!--more-->
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->

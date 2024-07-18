@@ -8,6 +8,7 @@ title: Beginning
 navigation_override: /
 aspect: 16:9
 domcol: ^191719
+spotisong: 2pw9RZWZibttZzoFhwjuy6
 ---
 
 <!--USER BEGIN 1-->
@@ -15,6 +16,7 @@ domcol: ^191719
 <!--USER END 1-->
 <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
+<!--more-->
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->

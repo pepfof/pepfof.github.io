@@ -8,6 +8,7 @@ title: Shooting Dreams
 navigation_override: /
 aspect: 16:9
 domcol: ^1e1418
+spotisong: 5VWtavZNYlK6m6MQY6YRg1
 ---
 
 <!--USER BEGIN 1-->
@@ -15,6 +16,7 @@ domcol: ^1e1418
 <!--USER END 1-->
 <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
+<!--more-->
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->

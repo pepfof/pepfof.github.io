@@ -27,6 +27,8 @@ IMG_ASPECT = "IMGASPECT"
 
 IMG_DOMCOL = "IMGCOL"
 IMG_DOMCOL_GET = "domcol: "
+IMG_MEDIA = "IMGMED"
+IMG_MEDIA_GET = "spotisong: "
 
 import cv2
 import numpy as np
@@ -39,9 +41,12 @@ def parse_file(filename):
         with open(filename, "r") as f:
             content = f.read()
     except:
+        print("cant open ",filename)
         return None, dict()
     
     domcol_line = None
+    
+    specific_dict = {}
 
     region = -1
     region_contents = dict()
@@ -54,11 +59,16 @@ def parse_file(filename):
             region_contents[region] = region_contents.setdefault(region, "") + line +"\n"
         if line.startswith(IMG_DOMCOL_GET):
             if(line[len(IMG_DOMCOL_GET):].count(IMG_DOMCOL)==0 and line[len(IMG_DOMCOL_GET):].count("#")==0):
-                domcol_line = line[len(IMG_DOMCOL_GET):]
-            print("DC: ", domcol_line)  
+                specific_dict[IMG_DOMCOL] = line[len(IMG_DOMCOL_GET):]
+                #print("DC: ", domcol_line)  
+        if line.startswith(IMG_MEDIA_GET):
+            if(line[len(IMG_MEDIA_GET):].count(IMG_MEDIA)==0):
+                specific_dict[IMG_MEDIA] = line[len(IMG_MEDIA_GET):]
+                print("spotisong: ", specific_dict[IMG_MEDIA])  
+            
     
     
-    return domcol_line, region_contents    
+    return specific_dict, region_contents    
     
 def generate_file(template, filename, post_dict, region_dict:dict ):
     with open(template, "r") as f:
@@ -104,7 +114,7 @@ def calculate_aspect(width: int, height: int) -> str:
 
     return f"{x}:{y}"
 
-def generate_post(filename:str, domcol):
+def generate_post(filename:str):
     
     basename = filename
     filename = "."+ASSET_PREFIX+filename
@@ -176,11 +186,12 @@ for fn in filenames:
     if fn.endswith(("py", "html")):
         continue
     
-    dl, rd = parse_file(fn) 
-    fn, sd = generate_post(fn, dl)
+    fn, sd1 = generate_post(fn)
+    sd, rd = parse_file(fn) 
+    sd.update(sd1)
     if(fn == None):
         continue
-    dl, rd = parse_file(fn) 
+    
     print(sd)
     generate_file(TEMPLATE_POST, fn, sd, rd)
     

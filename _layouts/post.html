@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
+
 <div class = "render_post">
-{{ content }}
+{% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
+{{ contentArray.first }}
 <div class="title">{{ page.title }}</div>
 <div class="date">{{ page.date | date_to_string }}</div>
+{%if page.spotisong%}
+<iframe src="https://open.spotify.com/embed/track/{{page.spotisong}}?utm_source=generator&theme=0" class ="spotisong_iframe" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+{%endif%}
+<div class="note">
+{{ contentArray.last }}
+</div>
 </div>

@@ -8,6 +8,7 @@ title: Black Robots
 navigation_override: /
 aspect: 16:13
 domcol: ^1b1611
+spotisong: 1611
 ---
 
 <!--USER BEGIN 1-->
@@ -15,6 +16,7 @@ domcol: ^1b1611
 <!--USER END 1-->
 <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
 
+<!--more-->
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->
