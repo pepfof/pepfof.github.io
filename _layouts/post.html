@@ -7,8 +7,10 @@ layout: default
     {{ contentArray.first }}
 
     
-    <div class = "image_box" style="aspect-ratio: auto {{ page.aspect }};">
-        <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
+    <div class = "image_box" style="aspect-ratio: auto {{ page.aspect }}; background-image: url('{{ page.render }}')">
+        <div class = "image_box_inner">    
+            <img src = "{{ page.render }}" class="image_main" alt="{{page.title}}">
+        </div>
     </div>
 
     <div class = "info_box">
