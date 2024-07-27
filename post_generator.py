@@ -188,6 +188,8 @@ for fn in filenames:
     
     fn, sd1 = generate_post(fn)
     sd, rd = parse_file(fn) 
+    if(sd == None):
+        sd = dict()
     sd.update(sd1)
     if(fn == None):
         continue
