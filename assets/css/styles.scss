@@ -23,7 +23,7 @@ body {
     align-items: stretch;
     flex-direction: row;
     //max-height: calc(100vh);
-    min-height: calc(100vh - 75px);
+    min-height: calc( 100vh - 138px );
 
     overflow: hidden;
 }
@@ -31,15 +31,13 @@ body {
 .render_post .image_main {
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
     display: block;
-    margin:auto;
+    width: auto;
+    height: auto;
+    margin:0;
 }
 
-@media screen and (max-width: 1100px) {
-    .render_post {
-        //flex-direction: column;
-    }
-}
 
 .render_post .spotisong_iframe{
     // float: right;
@@ -69,7 +67,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    flex: 1000 10 calc(365px);
+    flex: 100 1 calc(365px);
 }
 
 .render_post .info_box_main{
@@ -95,12 +93,12 @@ body {
     
     background-color: rgba(0,0,0,1);
     display: flex;
-    flex: 1 1 calc(100vh - 75px);
+    flex: 1 1 content;
 
 
     //max-width: calc(100vh - 128px);
     //min-height: calc(100vh - 75px);
-    max-height: calc(100vh - 75px);
+    max-height: calc(100vh - 138px);
 //    overflow: hidden;
 
     background-size: contain;
@@ -110,6 +108,7 @@ body {
     //aspect-ratio: auto 1 / 2;
     //min-width: 60%;
 }
+
 
 .render_post .image_box .image_box_inner{
     width: 100%;
@@ -131,6 +130,7 @@ body {
     margin-bottom: 5px;
     vertical-align: middle;
     width:calc( 100% - 64px );
+    font-size: 36px;
 }
 
 .render_post .song_button img{
@@ -138,6 +138,18 @@ body {
     vertical-align:middle;
 }
 
+@media screen and (any-pointer: fine) {
+    .render_post {
+        min-height: calc(100vh - 75px);
+        //flex-direction: column;
+    }
+    .render_post .image_box{
+        max-height: calc(100vh - 75px);
+    }
+    .render_post .song_button .song_info{
+        font-size: 16px;
+    }
+}
 
 .render_post .navigation_box {
     display: flex;
