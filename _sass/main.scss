@@ -79,6 +79,10 @@ ul{
   overflow: hidden;
   background-color: black;
   top: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s;
 }
 
 .menu a{
@@ -87,7 +91,8 @@ ul{
   font-size: 24pt;
   color: darkgray;
   background-color: black;
-  margin-left: 15px;
+  padding-left: 45px;
+  //border-radius: 10px;
 }
 .menu a:hover{
   background-color: black;
@@ -95,7 +100,9 @@ ul{
 .menu .current{
   color: #ebaa12;
   background: black;
-  background: linear-gradient(90deg, black 0%, rgba(34,34,34,1) 100%);
+  background: linear-gradient(45deg, black 0%, rgba(34,34,34,1) 100%);
+  //box-shadow: 0px 0px 30px 0px black inset;
+  //border-radius: 10px;
   
 }
 .nav{
@@ -143,6 +150,7 @@ ul{
 /* Toggle menu icon */
 .side-menu:checked ~ nav{
   max-height: 100%;
+  transition: all 0.5s;
 }
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;
@@ -160,9 +168,31 @@ body:has(.side-menu:checked) {
 overflow: hidden;
 }
 
+.desktop_info{
+  display: none;
+}
+
+.mobile_info{
+  display: block;
+  font-size: 24px;
+  margin-bottom: 120px;
+}
+
+.mobile_info img{
+  width:64px;
+}
+
 /* Responsiveness */
 @media (any-pointer: fine) {
 
+  .desktop_info{
+    display: block;
+  }
+
+  .mobile_info{
+    display: none;
+  }
+  
 
   .page_content {
     height: calc(100vh - 64px);
@@ -287,4 +317,19 @@ overflow: hidden;
     margin:auto;
     margin-bottom: 25px;
   }
+}
+
+.site_info_box{
+  margin:auto;
+  text-align: center;
+  width: 100%;
+  color:#333333;
+  margin: 30px 0px 30px 0px;
+  text-shadow: 0px 0px 5px black;
+}
+
+.site_info_box .link{
+  color:#333333;
+  text-decoration: underline;
+
 }

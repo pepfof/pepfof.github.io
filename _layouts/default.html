@@ -1,18 +1,24 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>pepfof | {{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    <div class = "wrap">
+
+<head>
+  <meta charset="utf-8">
+  <title>pepfof | {{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <div class="wrap">
     {% include navigation.html %}
-    <div class = "page_content">
-      <div class = "page_wrapper">
-    {{ content }}
-  </div>
+    <div class="page_content">
+      <div class="page_wrapper">
+        {{ content }}
+      </div>
+    <div class = "desktop_info">
+      {% include info.html %}
+    </div>
     </div>
   </div>
-  </body>
+</body>
+
 </html>
