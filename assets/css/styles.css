@@ -334,10 +334,9 @@ body {
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
+  align-content: space-between;
   align-items: stretch;
   flex-direction: row;
-  min-height: calc(100vh - 384px);
   width: fit-content;
   overflow: hidden;
 }
@@ -402,6 +401,7 @@ body {
   display: flex;
   flex: 1 1 auto;
   max-height: calc(100vh - 138px);
+  height: fit-content;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -434,17 +434,6 @@ body {
   vertical-align: middle;
 }
 
-@media screen and (any-pointer: fine) {
-  .render_post {
-    min-height: calc(100vh - 80px);
-  }
-  .render_post .image_box {
-    max-height: calc(100vh - 75px);
-  }
-  .render_post .song_button .song_info {
-    font-size: 16px;
-  }
-}
 .render_post .navigation_box {
   display: flex;
   flex-direction: row-reverse;
@@ -531,7 +520,7 @@ body {
 
 .post_grid_item .title {
   /*font-family: monospace;*/
-  font-size: 12pt;
+  font-size: 20pt;
   text-align: right;
   color: darkgray;
   text-decoration: none;
@@ -544,7 +533,7 @@ body {
 
 .post_grid_item .desc {
   /*font-family: monospace;*/
-  font-size: 8.5pt;
+  font-size: 14pt;
   text-align: right;
   color: dimgray;
   text-decoration: none;
@@ -585,6 +574,25 @@ body {
 @media screen and (max-width: 512px) {
   .post_grid_item {
     flex: 0 1 100%;
+  }
+}
+@media (any-pointer: fine) {
+  .render_post {
+    min-height: calc(100vh - 80px);
+  }
+  .render_post .image_box {
+    max-height: calc(100vh - 75px);
+  }
+  .render_post .song_button .song_info {
+    font-size: 16px;
+  }
+  .post_grid_item .title {
+    /*font-family: monospace;*/
+    font-size: 12pt;
+  }
+  .post_grid_item .desc {
+    /*font-family: monospace;*/
+    font-size: 8.5pt;
   }
 }
 
