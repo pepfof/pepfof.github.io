@@ -127,7 +127,8 @@ body {
 .post_grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
+    //justify-items: ;
     text-decoration: none;
     margin:0px;
 }
