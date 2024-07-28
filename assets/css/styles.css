@@ -30,6 +30,7 @@ ul {
   background: linear-gradient(90deg, rgb(8, 8, 8) 0vw, rgb(8, 8, 8) calc((100vw - 1600px) / 2 - 160px), rgb(22, 22, 22) calc((100vw - 1600px) / 2), rgb(22, 22, 22) calc(100vw - (100vw - 1600px) / 2), rgb(8, 8, 8) calc(100vw - (100vw - 1600px) / 2 + 160px), rgb(8, 8, 8) 100vw), url(/noise.jpg);
   background-blend-mode: hard-light;
   background-attachment: local;
+  padding: auto;
 }
 
 /* Header */
@@ -297,7 +298,7 @@ body {
   align-content: stretch;
   align-items: stretch;
   flex-direction: row;
-  min-height: calc(100vh - 138px);
+  min-height: calc(100vh - 384px);
   overflow: hidden;
 }
 
