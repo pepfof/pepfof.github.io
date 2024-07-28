@@ -81,7 +81,7 @@ body {
 }
 
 .render_post .info_box_song{
-    flex: 1 0 auto;
+    flex: 1 0 100%;
     padding:20px;
     width:fit-content;
     overflow: hidden;
@@ -106,6 +106,7 @@ body {
     background-size: contain;
     background-repeat:   no-repeat;
     background-position: center center; 
+    position: relative;
     //aspect-ratio: auto 1 / 2;
     //min-width: 60%;
 }
@@ -113,25 +114,73 @@ body {
 .render_post .image_box .image_box_inner{
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(50px);
 
     justify-content: center;
     display: flex;
     overflow: hidden;
 }
 
-.render_post .navigation_button {
-    text-decoration: none;
-    color: #AAAAAA;
-    font-size: 46px;
-    height:100%;
+
+.render_post .song_button{
+    vertical-align: middle;
+}
+.render_post .song_button .song_info{
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    width:calc( 100% - 64px );
 }
 
+.render_post .song_button img{
+    height: 48px;
+    vertical-align:middle;
+}
+
+
 .render_post .navigation_box {
-    justify-content: space-between;
-    align-content: right;
     display: flex;
     flex-direction: row-reverse;
+    vertical-align: middle;
+    flex: 1 0 500px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin:auto;
+}
+
+.render_post .navigation_button_right {
+    flex: 1 0 auto;
+    margin:0 0 0 20%;
+    padding:10px 10px 15px 10px;
+    opacity: 0%;
+    background: linear-gradient(270deg, rgba(0,0,0,0.5) 0%, rgba(34,34,34,0) 100%);
+    transition: all 0.1s;
+}
+
+.render_post .navigation_button_left {
+    flex: 1 0 auto;
+    margin:0 20% 0 0;
+    padding:10px 10px 15px 10px;
+    opacity: 0%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(34,34,34,0) 100%);
+    transition: all 0.1s;
+}
+
+.render_post .navigation_button_right:hover{
+    opacity: 100%;
+    transition: all 0.3s;
+}
+.render_post .navigation_button_left:hover{
+    opacity: 100%;
+    transition: all 0.3s;
+}
+
+.render_post .nav_inner_button{
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .post_feed_box {
@@ -160,11 +209,11 @@ body {
     box-shadow: 1px 1px 5px 0px black;
 
     transition: all 1s ;
+    min-width: 0
 }
 
 .post_grid_item img {
     border-radius: 5px;
-
 }
 
 .post_grid_item:hover {
@@ -181,6 +230,9 @@ body {
     text-decoration: none;
     margin-right: 1px;
     display:block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .post_grid_item .desc {
@@ -190,8 +242,18 @@ body {
     color: dimgray;
     text-decoration: none;
     margin-right: 1px;
-    display:block;
+    //display:block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+.post_grid_item .desc img {
+    width: 14px;
+    height: auto;
+    vertical-align: bottom;
+}
+
 
 .post_grid_item img {
     width: 100%;

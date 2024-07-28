@@ -17,6 +17,12 @@ layout: default
             <img src="{{ post.thumb }}" loading="lazy">
             <div class ="title">{{post.title | truncate: 40, "..." | downcase }}</div>
             <div class ="desc">{{post.date | date_to_string | downcase }}</div>
+            
+            <div class ="desc">
+                {% if post.spotisong %} 
+                {% endif %}{{ post.songname }} | {{ post.songautr }} <img src = "/spotify_small.png">
+            </div>
+            
         </a>
     </div>
     {%endif%}

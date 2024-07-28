@@ -9,8 +9,8 @@ navigation_override: /
 aspect: 16/9
 domcol: ^685b15
 spotisong: 
-songname: 
-songautr: 
+songname: Lorraine
+songautr: OZMA
 ---
 
 <!--USER BEGIN 1-->
@@ -19,6 +19,6 @@ songautr:
 
 <!--more-->
 <!--USER BEGIN 2-->
-Posted with "Lorraine" by OZMA from their Songs of Inaudible Tracks and Cars
+
 <!--USER END 2-->
 

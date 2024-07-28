@@ -9,8 +9,8 @@ navigation_override: /
 aspect: 16/9
 domcol: ^050507
 spotisong: 
-songname: 
-songautr: 
+songname: Talkative
+songautr: pepfof
 ---
 
 <!--USER BEGIN 1-->
@@ -19,7 +19,5 @@ songautr:
 
 <!--more-->
 <!--USER BEGIN 2-->
-Posted with my own "Talkative" demo. I will perhaps upload it here sometime.
-
 <!--USER END 2-->
 

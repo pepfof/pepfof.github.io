@@ -72,19 +72,16 @@ def parse_file(filename):
             region = -1
         elif region !=  -1:
             region_contents[region] = region_contents.setdefault(region, "") + line +"\n"
-        if line.startswith(IMG_DOMCOL_GET):
-            if(line[len(IMG_DOMCOL_GET):].count(IMG_DOMCOL)==0 and line[len(IMG_DOMCOL_GET):].count("#")==0):
-                specific_dict[IMG_DOMCOL] = line[len(IMG_DOMCOL_GET):]
-                #print("DC: ", domcol_line)  
-                
+        #if line.startswith(IMG_DOMCOL_GET):
+        #    if(line[len(IMG_DOMCOL_GET):].count(IMG_DOMCOL)==0 and line[len(IMG_DOMCOL_GET):].count("#")==0):
+        #        specific_dict[IMG_DOMCOL] = line[len(IMG_DOMCOL_GET):]
+        #        #print("DC: ", domcol_line)  
         for x in range(len(SAVE_ATTRIBUTES)):
             if line.startswith(SAVE_ATTRIBUTES_GET[x]):
                 if(line[len(SAVE_ATTRIBUTES_GET[x]):].count(SAVE_ATTRIBUTES[x])==0):
                     specific_dict[SAVE_ATTRIBUTES[x]] = line[len(SAVE_ATTRIBUTES_GET[x]):]
                     #print("spotisong: ", specific_dict[IMG_MEDIA])  
                 
-        specific_dict[IMG_MEDIA_NAME] = ""
-        specific_dict[IMG_MEDIA_ARTS] = "" 
     if(specific_dict[IMG_MEDIA] != ""):
         try:
             track = sp.track(specific_dict[IMG_MEDIA])
