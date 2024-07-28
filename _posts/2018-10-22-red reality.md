@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2018_10_22_red reality.png
 thumb: /assets/renders/thumb/thumb-2018_10_22_red reality.png
 title: Red Reality
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 16/9
 domcol: ^54534f
 spotisong: 29BK3FAFBEfhO5w4ZlFrky
+songname: Memories
+songautr: Weezer
 ---
 
 <!--USER BEGIN 1-->

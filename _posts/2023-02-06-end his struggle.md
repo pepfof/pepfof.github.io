@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2023_02_06_end his struggle.jpg
 thumb: /assets/renders/thumb/thumb-2023_02_06_end his struggle.jpg
 title: End His Struggle
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 9/16
 domcol: ^130a03
 spotisong: 57cXmeqCiKUF0GpJDFVAkt
+songname: Primal
+songautr: Slowdive
 ---
 
 <!--USER BEGIN 1-->

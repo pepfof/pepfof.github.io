@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2024_03_02_desolation.png
 thumb: /assets/renders/thumb/thumb-2024_03_02_desolation.png
 title: Desolation
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 1/1
 domcol: ^000000
 spotisong: 3QFQUqMj5UkDcrYYKFA5Vb
+songname: The Diamond Sea
+songautr: Sonic Youth
 ---
 
 <!--USER BEGIN 1-->

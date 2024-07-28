@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2020_07_20_nowhere nowhen.png
 thumb: /assets/renders/thumb/thumb-2020_07_20_nowhere nowhen.png
 title: Nowhere Nowhen
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 16/9
 domcol: ^050507
 spotisong: 
+songname: 
+songautr: 
 ---
 
 <!--USER BEGIN 1-->

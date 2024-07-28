@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2019_05_11_songs of inaudible trucks and cars.png
 thumb: /assets/renders/thumb/thumb-2019_05_11_songs of inaudible trucks and cars.png
 title: Songs Of Inaudible Trucks And Cars
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 16/9
 domcol: ^685b15
 spotisong: 
+songname: 
+songautr: 
 ---
 
 <!--USER BEGIN 1-->

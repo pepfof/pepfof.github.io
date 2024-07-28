@@ -6,7 +6,7 @@ layout: default
 {% assign posts_amount = site.posts | size %}
 <div class="post_grid">
 {% for post in site.posts %}
-    {%if post.type == "render"%}
+    {%if post.category == "render"%}
     {%comment%}
     {%raw%}
     <!div class="post_grid_item" style="background-color: #{{ post.domcol | remove: "^" }};">

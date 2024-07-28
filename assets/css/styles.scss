@@ -88,6 +88,7 @@ body {
     padding: 20px 0px 20px 0px;
     //border-bottom: 1px solid #222222;
     border-top: 1px solid #222222;
+    text-align: right;
 }
 
 .render_post .image_box{
@@ -117,6 +118,20 @@ body {
     justify-content: center;
     display: flex;
     overflow: hidden;
+}
+
+.render_post .navigation_button {
+    text-decoration: none;
+    color: #AAAAAA;
+    font-size: 46px;
+    height:100%;
+}
+
+.render_post .navigation_box {
+    justify-content: space-between;
+    align-content: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .post_feed_box {

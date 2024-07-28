@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2022_06_02_black robots.png
 thumb: /assets/renders/thumb/thumb-2022_06_02_black robots.png
 title: Black Robots
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 16/13
 domcol: ^1b1611
 spotisong: 0ccCwNzXvr1Yoz91vKz31Z
+songname: Yoshimi Battles the Pink Robots, Pt. 1
+songautr: The Flaming Lips
 ---
 
 <!--USER BEGIN 1-->

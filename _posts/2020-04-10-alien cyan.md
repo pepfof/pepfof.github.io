@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2020_04_10_alien cyan.png
 thumb: /assets/renders/thumb/thumb-2020_04_10_alien cyan.png
 title: Alien Cyan
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 16/9
 domcol: ^1c1e20
 spotisong: 36kWaNkpPZObPNKnpkVea2
+songname: Kite
+songautr: Stephen Malkmus & The Jicks
 ---
 
 <!--USER BEGIN 1-->

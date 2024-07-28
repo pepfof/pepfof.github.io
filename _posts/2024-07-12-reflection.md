@@ -1,7 +1,7 @@
 ---
 layout: post
 author: pepfof
-type: render
+category: render
 render: /assets/renders/2024_07_12_reflection.png
 thumb: /assets/renders/thumb/thumb-2024_07_12_reflection.png
 title: Reflection
@@ -9,6 +9,8 @@ navigation_override: /
 aspect: 9/16
 domcol: ^4b4b4b
 spotisong: 04bW8lrW5HPMv5WZJWqvL1
+songname: Hallo Spaceboy - 12" Remix
+songautr: David Bowie
 ---
 
 <!--USER BEGIN 1-->

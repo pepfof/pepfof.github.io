@@ -3,6 +3,8 @@
 import os
 import datetime
 from PIL import Image 
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
 
 import cv2
 import numpy as np
@@ -27,12 +29,22 @@ IMG_ASPECT = "IMGASPECT"
 
 IMG_DOMCOL = "IMGCOL"
 IMG_DOMCOL_GET = "domcol: "
+
 IMG_MEDIA = "IMGMED"
 IMG_MEDIA_GET = "spotisong: "
+
+IMG_MEDIA_NAME = "SONGNAME"
+IMG_MEDIA_ARTS = "ARTSNAME"
+IMG_MEDIA_NAME_GET = "songname: "
+IMG_MEDIA_ARTS_GET = "songautr: "
 
 import cv2
 import numpy as np
 from skimage import io
+
+
+auth_manager = SpotifyClientCredentials()
+sp = spotipy.Spotify(auth_manager=auth_manager)
 
 
 def parse_file(filename):
@@ -50,6 +62,9 @@ def parse_file(filename):
 
     region = -1
     region_contents = dict()
+    SAVE_ATTRIBUTES = [IMG_MEDIA,IMG_MEDIA_NAME,IMG_MEDIA_ARTS,IMG_DOMCOL]
+    SAVE_ATTRIBUTES_GET = [IMG_MEDIA_GET, IMG_MEDIA_NAME_GET, IMG_MEDIA_ARTS_GET, IMG_DOMCOL_GET]
+    
     for line in content.split("\n"):
         if line.startswith(BEGIN_TAG):
             region = int(line[len(BEGIN_TAG):len(BEGIN_TAG)+1])
@@ -61,11 +76,22 @@ def parse_file(filename):
             if(line[len(IMG_DOMCOL_GET):].count(IMG_DOMCOL)==0 and line[len(IMG_DOMCOL_GET):].count("#")==0):
                 specific_dict[IMG_DOMCOL] = line[len(IMG_DOMCOL_GET):]
                 #print("DC: ", domcol_line)  
-        if line.startswith(IMG_MEDIA_GET):
-            if(line[len(IMG_MEDIA_GET):].count(IMG_MEDIA)==0):
-                specific_dict[IMG_MEDIA] = line[len(IMG_MEDIA_GET):]
-                print("spotisong: ", specific_dict[IMG_MEDIA])  
-            
+                
+        for x in range(len(SAVE_ATTRIBUTES)):
+            if line.startswith(SAVE_ATTRIBUTES_GET[x]):
+                if(line[len(SAVE_ATTRIBUTES_GET[x]):].count(SAVE_ATTRIBUTES[x])==0):
+                    specific_dict[SAVE_ATTRIBUTES[x]] = line[len(SAVE_ATTRIBUTES_GET[x]):]
+                    #print("spotisong: ", specific_dict[IMG_MEDIA])  
+                
+        specific_dict[IMG_MEDIA_NAME] = ""
+        specific_dict[IMG_MEDIA_ARTS] = "" 
+    if(specific_dict[IMG_MEDIA] != ""):
+        try:
+            track = sp.track(specific_dict[IMG_MEDIA])
+            specific_dict[IMG_MEDIA_NAME] = track["name"]
+            specific_dict[IMG_MEDIA_ARTS] = ", ".join([x["name"] for x in track["artists"]])   
+        except:
+            pass   
     
     
     return specific_dict, region_contents    
@@ -154,7 +180,7 @@ def generate_post(filename:str):
         avg_col = (sum(cols)/len(cols),sum(cols)/len(cols),sum(cols)/len(cols))
     dominant = avg_col
     
-    print(avg_col)
+    #print(avg_col)
     specific_dict[IMG_DOMCOL] = '^%02x%02x%02x' % (int(dominant[0]), int(dominant[1]), int(dominant[2]))
     #dominant = (22,22,22)
     #specific_dict[IMG_DOMCOL] = '^%02x%02x%02x' % (int(dominant[0]), int(dominant[1]), int(dominant[2]))
@@ -194,7 +220,7 @@ for fn in filenames:
     if(fn == None):
         continue
     
-    print(sd)
+    #print(sd)
     generate_file(TEMPLATE_POST, fn, sd, rd)
     
 
