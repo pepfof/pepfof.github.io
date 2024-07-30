@@ -59,11 +59,12 @@ layout: post_grid
             }
 
             if (getQueryVariable("focus") != "false") {
-                document.getElementById("post_"+getQueryVariable("focus")).scrollIntoView({ behavior: "smooth", block: "center"});
-                document.getElementById("post_"+getQueryVariable("focus")).style = "animation: 2s ease-out 0s 1 post_focus";
+                var pid = getQueryVariable("focus");
                 var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 var newurl = url.split("?")[0];
                 window.history.replaceState({path:newurl},'',newurl);
+                document.getElementById("post_"+pid).scrollIntoView({ behavior: "smooth", block: "center", inline:"center"});
+                document.getElementById("post_"+pid).style = "animation: 2s ease-out 0s 1 post_focus";
             }
         </script>
 </div>
