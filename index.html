@@ -60,7 +60,7 @@
         <img src = "/email.png">
     </a>
     <br> <p xmlns:cc="http://creativecommons.org/ns#" >All original work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;" class="link">CC BY-SA 4.0</a></p>
-    2017 - 2024 | p e p f o f
+    30.07.2024 | pepfof
 </div>
       </div>
   </nav>
@@ -3364,11 +3364,12 @@
             }
 
             if (getQueryVariable("focus") != "false") {
-                document.getElementById("post_"+getQueryVariable("focus")).scrollIntoView({ behavior: "smooth", block: "center"});
-                document.getElementById("post_"+getQueryVariable("focus")).style = "animation: 2s ease-out 0s 1 post_focus";
+                var pid = getQueryVariable("focus");
                 var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 var newurl = url.split("?")[0];
                 window.history.replaceState({path:newurl},'',newurl);
+                document.getElementById("post_"+pid).scrollIntoView({ behavior: "smooth", block: "center", inline:"center"});
+                document.getElementById("post_"+pid).style = "animation: 2s ease-out 0s 1 post_focus";
             }
         </script>
 </div>
@@ -3398,7 +3399,7 @@
         <img src = "/email.png">
     </a>
     <br> <p xmlns:cc="http://creativecommons.org/ns#" >All original work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;" class="link">CC BY-SA 4.0</a></p>
-    2017 - 2024 | p e p f o f
+    30.07.2024 | pepfof
 </div>
     </div>
     </div>
