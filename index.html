@@ -14,14 +14,31 @@ layout: default
     {%endcomment%}
     <div class="post_grid_item">
         <a href="{{ post.url }}">
-            <img src="{{ post.thumb }}" loading="lazy">
-            <div class ="title">{{post.title | truncate: 40, "..." | downcase }}</div>
-            <div class ="desc">{{post.date | date_to_string | downcase }}</div>
-            
-            <div class ="desc">
-                {% if post.spotisong %} 
-                {% endif %}{{ post.songname }} | {{ post.songautr }} <img src = "/spotify_small.png">
+
+            <img src="{{ post.thumb }}" loading="lazy" class="thumbnail">
+
+            <div class ="title">
+                {{post.title | truncate: 40, "..." | downcase }}
             </div>
+
+            <div class ="desc">
+                <div class = "date">
+                    {{post.date | date_to_string | downcase }}
+                </div>
+                
+                <div class = "song_desc_wrap">
+                    <div class = "song_desc">
+                        {{ post.songname }} | {{ post.songautr }}
+                    </div>
+                    {% if post.spotisong %} 
+                    <div class="spoti_small_icon">
+                        <img src = "/spotify_small.png" >
+                    </div>
+                    {% endif %} 
+                </div>
+            </div>
+            
+            
             
         </a>
     </div>

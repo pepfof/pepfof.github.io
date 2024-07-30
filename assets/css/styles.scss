@@ -173,15 +173,15 @@ body {
 
 .render_post .navigation_button_right:hover{
     opacity: 100%;
-    box-shadow: -200px 0px 100px -200px black inset;
+    box-shadow: -200px 0px 100px -150px rgba(32,32,32,1) inset;
     transition: all 0.3s;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.8s;
 }
 .render_post .navigation_button_left:hover{
     opacity: 100%;
-    box-shadow: 200px 0px 100px -200px black inset;
+    box-shadow: 200px 0px 100px -150px rgba(32,32,32,1) inset;
     transition: all 0.3s;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.8s;
 }
 
 .render_post .nav_inner_button{
@@ -211,21 +211,21 @@ body {
     margin:5px;
     background-color: #222222;
     border-radius: 10px;
-    -moz-box-shadow: 1px 1px 5px 0px black; 
-    -webkit-box-shadow: 1px 1px 5px 0px black; 
-    box-shadow: 1px 1px 5px 0px black;
+    -moz-box-shadow: 0px 0px 5px -2px black;
+    -webkit-box-shadow: 0px 0px 5px -2px black;
+    box-shadow: 0px 0px 5px -2px black;
     transition: all 1s ;
     min-width: 0
 }
 
-.post_grid_item img {
+.post_grid_item .thumbnail {
     border-radius: 5px;
 }
 
 .post_grid_item:hover {
     background-color:#292929;
-    transition: all .01s ;
-    box-shadow: 0px 0px 10px 1px black;
+    transition: all .1s ;
+    box-shadow: 5px 5px 10px -2px black;
 }
 
 .post_grid_item .title {
@@ -244,24 +244,48 @@ body {
 .post_grid_item .desc {
     /*font-family: monospace;*/
     font-size: 14pt;
-    text-align: right;
     color: dimgray;
+    text-align: right;
     text-decoration: none;
     margin-right: 1px;
-    //display:block;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    //display:block;
 }
 
-.post_grid_item .desc img {
-    width: 14px;
-    height: auto;
-    vertical-align: bottom;
+.post_grid_item .song_desc{
+    display: inline-block;
+    position: relative;
+    text-overflow: ellipsis;
+    text-align: right;
+    overflow: hidden;
+    text-wrap: nowrap;
+    flex: 1 1 auto;
+}
+
+.post_grid_item .song_desc_wrap{
+    display: flex;
+    align-items: center;
+    max-width: inherit;
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid #1f1f1f;
+}
+
+.post_grid_item .spoti_small_icon{
+    margin-left: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post_grid_item .spoti_small_icon img{
+    /*font-family: monospace;*/
+    width: 28px;
+    height: 28px;
 }
 
 
-.post_grid_item img {
+.post_grid_item .thumbnail {
     width: 100%;
     height: auto;
 }
@@ -271,15 +295,16 @@ body {
     text-decoration: none;
     display: block;
     height:100%;
+    width: 100%;
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1550px)  and (min-height: 640px) {
     .post_grid_item {
-        flex: 0 1 calc(33% - 7px);
+        flex: 0 1 calc(33% - 10px);
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) and (min-height: 960px) {
     .post_grid_item {
         flex: 0 1 calc(50% - 10px);
     }
@@ -293,7 +318,7 @@ body {
 
 @media (any-pointer: fine) {
     .render_post {
-        min-height: calc(100vh - 80px);
+        //min-height: calc(100vh - 80px);
         //flex-direction: column;
     }
     .render_post .image_box{
@@ -309,5 +334,16 @@ body {
     .post_grid_item .desc {
         /*font-family: monospace;*/
         font-size: 8.5pt;
+    }
+    .post_grid_item .spoti_small_icon{
+        margin-left: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .post_grid_item .spoti_small_icon img{
+        /*font-family: monospace;*/
+        width: 14px;
+        height: 14px;
     }
 }
