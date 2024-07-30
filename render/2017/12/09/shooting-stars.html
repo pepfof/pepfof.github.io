@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>pepfof | Shooting Stars</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/post_grid.css">
+  <link rel="stylesheet" href="/assets/css/render_post.css">
 </head>
 
 <body>
@@ -64,87 +65,173 @@
       </div>
   </nav>
 </header>
-    <div class="page_content">
-      <div class="page_wrapper">
+          <input class="fullscreen_checkbox" type="checkbox" id="fullscreen_checkbox" />
+
+<div class="fullscreen_container" style="background-image: url('/assets/renders/2017_12_09_4_shooting stars.png');" id="fullscreen_container">
+    <div class="navigation_box_fullscreen">
+
+        <a href="/render/2017/12/09/people.html?fullscreen=1" class="navigation_button_right_fullscreen">
+            <div class="nav_inner_button"  style="background-image: url('/right.png'); 
+
+        background-position: right center;"></div>
+        </a>
+
+        <label class="navigation_button_fullscreen_exit" for="fullscreen_checkbox">
+        </label>
+
+        <a href="/render/2017/12/09/sleepwalking.html?fullscreen=1" class="navigation_button_left_fullscreen">
+            <div class="nav_inner_button"  style="background-image: url('/left.png');
+ ">
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="page_content">
+    <div class="page_wrapper">
         <div class="render_post">
 
-    
-    <!--USER BEGIN 1-->
+            
+            <!--USER BEGIN 1-->
 
 <!--USER END 1-->
 
 
 
 
-    
-        <div class="image_box" style="aspect-ratio: auto 16/9; background-image: url('/assets/renders/2017_12_09_4_shooting stars.png')">
             
-            <div class="image_box_inner">
-                <img src="/assets/renders/2017_12_09_4_shooting stars.png" class="image_main" alt="Shooting Stars">
-            </div>
-
-            <div class="navigation_box">
-                
-                <a href="/render/2017/12/09/people.html" class="navigation_button_right">
-                    <div class="nav_inner_button" style="background-image: url('/right.png'); 
-                        background-position: right center;"></div>
-                </a>
-                
-                
-                <a href="/render/2017/12/09/sleepwalking.html" class="navigation_button_left">
-                    <div class="nav_inner_button" style="background-image: url('/left.png');"></div>
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="info_box">
-
-            <div class="info_box_main">
-
-
-                <div class="title">
-                    Shooting Stars
-                </div>
-                <div class="date">
-                    09 Dec 2017
-                </div>
-
-
-                <div class="note">
+                <div class="image_box"
+                    style="aspect-ratio: auto 16/9; background-image: url('/assets/renders/2017_12_09_4_shooting stars.png')">
                     
+                    <div class="image_box_inner">
+                        <img src="/assets/renders/2017_12_09_4_shooting stars.png" class="image_main" alt="Shooting Stars">
+                    </div>
+
+                    <div class="navigation_box">
+
+
+                        <a href="/render/2017/12/09/people.html" class="navigation_button_right">
+                            <div class="nav_inner_button"  style="background-image: url('/right.png'); 
+                
+                        background-position: right center;"></div>
+                        </a>
+
+                        <label class="navigation_button_fullscreen" for="fullscreen_checkbox" id="nav_fs_button">
+                            <div class="nav_inner_button" style="background-image: url('/fullscreen.png'); 
+                        background-position: center center;">
+                                <span id="nav_fs_hint">Click here for fullscreen</span>
+                            </div>
+                        </label>
+
+                        <a href="/render/2017/12/09/sleepwalking.html" class="navigation_button_left">
+                            <div class="nav_inner_button"  style="background-image: url('/left.png');
+                     ">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info_box">
+
+                    <div class="info_box_main">
+
+
+                        <div class="title">
+                            Shooting Stars
+                        </div>
+                        <div class="date">
+                            09 Dec 2017
+                        </div>
+
+
+                        <div class="note">
+                            
 <!--USER BEGIN 2-->
 
 <!--USER END 2-->
 
 
-                </div>
-
-
-            </div>
-
-            <div class="info_box_song">
-                
-                <a href="https://open.spotify.com/track/7tOcPDj3vyopZ404pY6UuP?go=1" target="_blank"
-                    rel="noopener noreferrer" style="text-decoration: none; color:#666666; text-align:right">
-                    <div class="song_button">
-                        <div class="song_info">
-                            Shooting Stars | Bag Raiders
                         </div>
-                        <img src="/spotify_play.png">
-                    </div>
-                </a>
-                
 
-                
-                <! /div>
+
+                    </div>
+
+                    <div class="info_box_song">
+                        
+                        <a href="https://open.spotify.com/track/7tOcPDj3vyopZ404pY6UuP?go=1" target="_blank"
+                            rel="noopener noreferrer" style="text-decoration: none; color:#666666; text-align:right">
+                            <div class="song_button">
+                                <div class="song_info">
+                                    Shooting Stars | Bag Raiders
+                                </div>
+                                <img src="/spotify_play.png">
+                            </div>
+                        </a>
+                        
+
+                        
+                        <! /div>
+
+                    </div>
+                </div>
+                <! https://open.spotify.com/track/?go=1>
 
             </div>
         </div>
-        <! https://open.spotify.com/track/?go=1>
-      </div>
-    <div class = "desktop_info">
-      <div class="site_info_box">
+
+
+        <script>
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) {
+                        return pair[1];
+                    }
+                }
+                return (false);
+            }
+
+            if (getQueryVariable("fullscreen") == "1") {
+                document.getElementById("fullscreen_checkbox").checked = true;
+            }
+            if (getQueryVariable("fh") == "1") {
+                document.getElementById("nav_fs_button").style = "animation:2s ease-out 0s 1 fullscreen_hint";
+                document.getElementById("nav_fs_hint").style = "animation:2s ease-out 0s 1 fullscreen_hint_text";
+                var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                var newurl = url.split("?")[0];
+                window.history.pushState({path:newurl},'',newurl);
+            }
+
+            document.querySelector("input[id=fullscreen_checkbox]").addEventListener("change", function() {
+                var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                if( this.checked == false ){
+                    var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                    var newurl = url.split("?")[0];
+                    window.history.pushState({path:newurl},'',newurl);
+                }
+                else{
+                    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?fullscreen=1";
+                    window.history.pushState({path:newurl},'',newurl);
+                }
+            }, false);
+
+            
+            window.onload = function() {
+                var anchors = document.getElementsByTagName("a");
+
+                for (var i = 0; i < anchors.length; i++) {
+                    if(anchors[i].href.endsWith("/")){
+                    anchors[i].href = "/index.html" + "?focus=77";
+                    }
+                }
+            }
+        </script>
+
+
+        <div class="desktop_info">
+            <div class="site_info_box">
     Hosted on <a href="https://github.com" class="link">github.com</a>
     <br>
     <br>
@@ -169,9 +256,11 @@
     <br> <p xmlns:cc="http://creativecommons.org/ns#" >All original work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;" class="link">CC BY-SA 4.0</a></p>
     2017 - 2024 | p e p f o f
 </div>
+        </div>
     </div>
-    </div>
-  </div>
+</div>
+        </div>
+      
 </body>
 
 </html>
