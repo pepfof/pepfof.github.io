@@ -190,8 +190,24 @@
                 return (false);
             }
 
+            document.querySelector("input[id=fullscreen_checkbox]").addEventListener("change", function() {
+                var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                if( this.checked == false ){
+                    var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                    var newurl = url.split("?")[0];
+                    window.history.replaceState({path:newurl},'',newurl);
+                    document.exitFullscreen()
+                }
+                else{
+                    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?fullscreen=1";
+                    window.history.replaceState({path:newurl},'',newurl);
+                    document.getElementById("fullscreen_container").requestFullscreen({ navigationUI: "hide" })
+                }
+            }, false);
+
             if (getQueryVariable("fullscreen") == "1") {
                 document.getElementById("fullscreen_checkbox").checked = true;
+                document.getElementById("fullscreen_container").requestFullscreen({ navigationUI: "hide" })
             }
             if (getQueryVariable("fh") == "1") {
                 document.getElementById("nav_fs_button").style = "animation:2s ease-out 0s 1 fullscreen_hint";
@@ -201,18 +217,6 @@
                 window.history.replaceState({path:newurl},'',newurl);
             }
 
-            document.querySelector("input[id=fullscreen_checkbox]").addEventListener("change", function() {
-                var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
-                if( this.checked == false ){
-                    var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
-                    var newurl = url.split("?")[0];
-                    window.history.replaceState({path:newurl},'',newurl);
-                }
-                else{
-                    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?fullscreen=1";
-                    window.history.replaceState({path:newurl},'',newurl);
-                }
-            }, false);
 
 
             var anchors = document.getElementsByTagName("a");
