@@ -194,10 +194,16 @@
             document.querySelector("input[id=fullscreen_checkbox]").addEventListener("change", function() {
                 var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 if( this.checked == false ){
-                    var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
-                    var newurl = url.split("?")[0];
-                    window.history.replaceState({path:newurl},'',newurl);
-                    document.exitFullscreen()
+                    if (document.fullscreenElement == null) {
+                        document.getElementById("fullscreen_checkbox").checked = true;
+                        document.getElementById("fullscreen_container").requestFullscreen({ navigationUI: "hide" })
+                    }
+                    else{
+                        var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                        var newurl = url.split("?")[0];
+                        window.history.replaceState({path:newurl},'',newurl);
+                        document.exitFullscreen()
+                    }
                 }
                 else{
                     var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?fullscreen=1";
