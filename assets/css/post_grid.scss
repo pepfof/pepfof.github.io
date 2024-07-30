@@ -49,10 +49,6 @@
     min-width: 0
 }
 
-.post_grid_item .thumbnail {
-    border-radius: 5px;
-}
-
 .post_grid_item:hover {
     background-color:#292929;
     transition: all .1s ;
@@ -117,8 +113,10 @@
 
 
 .post_grid_item .thumbnail {
-    width: 100%;
+    width: inherit;
+    border-radius: 5px;
     height: auto;
+    aspect-ratio: 1 / 1;
 }
 
 .post_grid_item a {

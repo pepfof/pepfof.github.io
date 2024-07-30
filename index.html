@@ -15,7 +15,7 @@ layout: post_grid
     <div class="post_grid_item" id = "post_{{ post.postid }}">
         <a href="{{ post.url }}?fh=1">
 
-            <img src="{{ post.thumb }}" loading="lazy" class="thumbnail">
+            <img src="{{ post.thumb }}" class="thumbnail">
 
             <div class ="title">
                 {{post.title | truncate: 40, "..." | downcase }}
@@ -63,7 +63,7 @@ layout: post_grid
                 document.getElementById("post_"+getQueryVariable("focus")).style = "animation: 2s ease-out 0s 1 post_focus";
                 var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 var newurl = url.split("?")[0];
-                window.history.pushState({path:newurl},'',newurl);
+                window.history.replaceState({path:newurl},'',newurl);
             }
         </script>
 </div>
