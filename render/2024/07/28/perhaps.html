@@ -198,7 +198,7 @@
                 document.getElementById("nav_fs_hint").style = "animation:2s ease-out 0s 1 fullscreen_hint_text";
                 var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 var newurl = url.split("?")[0];
-                window.history.pushState({path:newurl},'',newurl);
+                window.history.replaceState({path:newurl},'',newurl);
             }
 
             document.querySelector("input[id=fullscreen_checkbox]").addEventListener("change", function() {
@@ -206,11 +206,11 @@
                 if( this.checked == false ){
                     var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
                     var newurl = url.split("?")[0];
-                    window.history.pushState({path:newurl},'',newurl);
+                    window.history.replaceState({path:newurl},'',newurl);
                 }
                 else{
                     var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?fullscreen=1";
-                    window.history.pushState({path:newurl},'',newurl);
+                    window.history.replaceState({path:newurl},'',newurl);
                 }
             }, false);
 
