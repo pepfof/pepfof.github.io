@@ -27,6 +27,8 @@ IMG_NAME = "IMGNAME"
 IMG_TIME = "IMGTIME"
 IMG_ASPECT = "IMGASPECT"
 
+POST_ID = "POSTID"
+
 IMG_DOMCOL = "IMGCOL"
 IMG_DOMCOL_GET = "domcol: "
 
@@ -205,7 +207,9 @@ def generate_post(filename:str):
 
     
 filenames = next(os.walk("."+ASSET_PREFIX), (None, None, []))[2]
+pid = 0
 for fn in filenames:
+    pid+=1
     if fn.endswith(("py", "html")):
         continue
     
@@ -214,6 +218,7 @@ for fn in filenames:
     if(sd == None):
         sd = dict()
     sd.update(sd1)
+    sd[POST_ID] = str(pid)
     if(fn == None):
         continue
     

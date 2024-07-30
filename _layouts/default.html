@@ -4,21 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>pepfof | {{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/post_grid.css">
+  <link rel="stylesheet" href="/assets/css/render_post.css">
 </head>
 
 <body>
   <div class="wrap">
     {% include navigation.html %}
-    <div class="page_content">
-      <div class="page_wrapper">
-        {{ content }}
-      </div>
-    <div class = "desktop_info">
-      {% include info.html %}
-    </div>
-    </div>
-  </div>
+          {{ content }}
+        </div>
+      
 </body>
 
 </html>

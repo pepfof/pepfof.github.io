@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: post_grid
 ---
 <div class = "post_feed_box">
 {% assign posts_amount = site.posts | size %}
@@ -12,8 +12,8 @@ layout: default
     <!div class="post_grid_item" style="background-color: #{{ post.domcol | remove: "^" }};">
     {%endraw%}
     {%endcomment%}
-    <div class="post_grid_item">
-        <a href="{{ post.url }}">
+    <div class="post_grid_item" id = "post_{{ post.postid }}">
+        <a href="{{ post.url }}?fh=1">
 
             <img src="{{ post.thumb }}" loading="lazy" class="thumbnail">
 
@@ -25,7 +25,7 @@ layout: default
                 <div class = "date">
                     {{post.date | date_to_string | downcase }}
                 </div>
-                
+
                 <div class = "song_desc_wrap">
                     <div class = "song_desc">
                         {{ post.songname }} | {{ post.songautr }}
@@ -44,5 +44,27 @@ layout: default
     </div>
     {%endif%}
 {% endfor %}
+
+<script>
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) {
+                        return pair[1];
+                    }
+                }
+                return (false);
+            }
+
+            if (getQueryVariable("focus") != "false") {
+                document.getElementById("post_"+getQueryVariable("focus")).scrollIntoView({ behavior: "smooth", block: "center"});
+                document.getElementById("post_"+getQueryVariable("focus")).style = "animation: 2s ease-out 0s 1 post_focus";
+                var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                var newurl = url.split("?")[0];
+                window.history.pushState({path:newurl},'',newurl);
+            }
+        </script>
 </div>
 </div>

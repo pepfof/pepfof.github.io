@@ -1,92 +1,191 @@
 ---
 layout: default
 ---
-<div class="render_post">
 
-    {% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
-    {{ contentArray.first }}
+<input class="fullscreen_checkbox" type="checkbox" id="fullscreen_checkbox" />
 
+<div class="fullscreen_container" style="background-image: url('{{ page.render }}');" id="fullscreen_container">
+    <div class="navigation_box_fullscreen">
 
-    {%if page.domcol == "^000000"%}
-    <div class="image_box" style="aspect-ratio: auto {{ page.aspect }}; background-color: #000000')">
-        {%else%}
-        <div class="image_box" style="aspect-ratio: auto {{ page.aspect }}; background-image: url('{{ page.render }}')">
-            {%endif%}
-            <div class="image_box_inner">
-                <img src="{{ page.render }}" class="image_main" alt="{{page.title}}">
+        <a href="{{page.next_in_category.url}}?fullscreen=1" class="navigation_button_right_fullscreen">
+            <div class="nav_inner_button" {% if page.next_in_category !=nil %} style="background-image: url('/right.png'); 
+{% endif %}
+        background-position: right center;"></div>
+        </a>
+
+        <label class="navigation_button_fullscreen_exit" for="fullscreen_checkbox">
+        </label>
+
+        <a href="{{page.previous_in_category.url}}?fullscreen=1" class="navigation_button_left_fullscreen">
+            <div class="nav_inner_button" {% if page.previous_in_category !=nil %} style="background-image: url('/left.png');
+{% endif %} ">
             </div>
+        </a>
+    </div>
+</div>
 
-            <div class="navigation_box">
-                {% if page.next_in_category != nil %}
-                <a href="{{page.next_in_category.url}}" class="navigation_button_right">
-                    <div class="nav_inner_button" style="background-image: url('/right.png'); 
+<div class="page_content">
+    <div class="page_wrapper">
+        <div class="render_post">
+
+            {% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
+            {{ contentArray.first }}
+
+
+            {%if page.domcol == "^000000"%}
+            <div class="image_box" style="aspect-ratio: auto {{ page.aspect }}; background-color: #000000')">
+                {%else%}
+                <div class="image_box"
+                    style="aspect-ratio: auto {{ page.aspect }}; background-image: url('{{ page.render }}')">
+                    {%endif%}
+                    <div class="image_box_inner">
+                        <img src="{{ page.render }}" class="image_main" alt="{{page.title}}">
+                    </div>
+
+                    <div class="navigation_box">
+
+
+                        <a href="{{page.next_in_category.url}}" class="navigation_button_right">
+                            <div class="nav_inner_button" {% if page.next_in_category !=nil %} style="background-image: url('/right.png'); 
+                {% endif %}
                         background-position: right center;"></div>
-                </a>
-                {% endif %}
-                {% if page.previous_in_category != nil %}
-                <a href="{{page.previous_in_category.url}}" class="navigation_button_left">
-                    <div class="nav_inner_button" style="background-image: url('/left.png');"></div>
-                </a>
-                {% endif %}
-            </div>
-        </div>
+                        </a>
 
-        <div class="info_box">
+                        <label class="navigation_button_fullscreen" for="fullscreen_checkbox" id="nav_fs_button">
+                            <div class="nav_inner_button" style="background-image: url('/fullscreen.png'); 
+                        background-position: center center;">
+                                <span id="nav_fs_hint">Click here for fullscreen</span>
+                            </div>
+                        </label>
 
-            <div class="info_box_main">
-
-
-                <div class="title">
-                    {{ page.title }}
-                </div>
-                <div class="date">
-                    {{ page.date | date_to_string }}
+                        <a href="{{page.previous_in_category.url}}" class="navigation_button_left">
+                            <div class="nav_inner_button" {% if page.previous_in_category !=nil %} style="background-image: url('/left.png');
+                    {% endif %} ">
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
+                <div class="info_box">
 
-                <div class="note">
-                    {{ contentArray.last }}
-                </div>
+                    <div class="info_box_main">
 
 
-            </div>
-
-            <div class="info_box_song">
-                {%if page.spotisong %}
-                <a href="https://open.spotify.com/track/{{page.spotisong}}?go=1" target="_blank"
-                    rel="noopener noreferrer" style="text-decoration: none; color:#666666; text-align:right">
-                    <div class="song_button">
-                        <div class="song_info">
-                            {{ page.songname }} | {{ page.songautr }}
+                        <div class="title">
+                            {{ page.title }}
                         </div>
-                        <img src="/spotify_play.png">
+                        <div class="date">
+                            {{ page.date | date_to_string }}
+                        </div>
+
+
+                        <div class="note">
+                            {{ contentArray.last }}
+                        </div>
+
+
                     </div>
-                </a>
-                {%else%}
-                <div class="song_button" style="text-decoration: none; color:#666666; text-align:right">
-                    <div class="song_info">
-                    {{ page.songname }} | {{ page.songautr }}<br>(Not available on Spotify)
+
+                    <div class="info_box_song">
+                        {%if page.spotisong %}
+                        <a href="https://open.spotify.com/track/{{page.spotisong}}?go=1" target="_blank"
+                            rel="noopener noreferrer" style="text-decoration: none; color:#666666; text-align:right">
+                            <div class="song_button">
+                                <div class="song_info">
+                                    {{ page.songname }} | {{ page.songautr }}
+                                </div>
+                                <img src="/spotify_play.png">
+                            </div>
+                        </a>
+                        {%else%}
+                        <div class="song_button" style="text-decoration: none; color:#666666; text-align:right">
+                            <div class="song_info">
+                                {{ page.songname }} | {{ page.songautr }}<br>(Not available on Spotify)
+                            </div>
+                        </div>
+                        {%endif%}
+
+                        {% comment %}
+                        {% raw %}
+                        {%if page.spotisong%}
+                        {%unless page.spotiplaylist%}
+                        <iframe
+                            src="https://open.spotify.com/embed/track/{{page.spotisong}}?utm_source=generator&theme=0"
+                            scrolling="no" class="spotisong_iframe" width="40%" height="152" frameBorder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        {%else%}
+                        <iframe
+                            src="https://open.spotify.com/embed/playlist/{{page.spotisong}}?utm_source=generator&theme=0"
+                            scrolling="no" class="spotisong_iframe" width="40%" height="152" frameBorder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        {%endunless%}
+                        {%endif%}
+                        {% endraw %}
+                        {% endcomment %}
+                        <! /div>
+
                     </div>
                 </div>
-                {%endif%}
-
-                {% comment %}
-                {% raw %}
-                {%if page.spotisong%}
-                {%unless page.spotiplaylist%}
-                <iframe src="https://open.spotify.com/embed/track/{{page.spotisong}}?utm_source=generator&theme=0"
-                    scrolling="no" class="spotisong_iframe" width="40%" height="152" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                {%else%}
-                <iframe src="https://open.spotify.com/embed/playlist/{{page.spotisong}}?utm_source=generator&theme=0"
-                    scrolling="no" class="spotisong_iframe" width="40%" height="152" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                {%endunless%}
-                {%endif%}
-                {% endraw %}
-                {% endcomment %}
-                <! /div>
+                <! https://open.spotify.com/track/?go=1>
 
             </div>
         </div>
-        <! https://open.spotify.com/track/?go=1>
+
+
+        <script>
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) {
+                        return pair[1];
+                    }
+                }
+                return (false);
+            }
+
+            if (getQueryVariable("fullscreen") == "1") {
+                document.getElementById("fullscreen_checkbox").checked = true;
+            }
+            if (getQueryVariable("fh") == "1") {
+                document.getElementById("nav_fs_button").style = "animation:2s ease-out 0s 1 fullscreen_hint";
+                document.getElementById("nav_fs_hint").style = "animation:2s ease-out 0s 1 fullscreen_hint_text";
+                var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                var newurl = url.split("?")[0];
+                window.history.pushState({path:newurl},'',newurl);
+            }
+
+            document.querySelector("input[id=fullscreen_checkbox]").addEventListener("change", function() {
+                var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                if( this.checked == false ){
+                    var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                    var newurl = url.split("?")[0];
+                    window.history.pushState({path:newurl},'',newurl);
+                }
+                else{
+                    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?fullscreen=1";
+                    window.history.pushState({path:newurl},'',newurl);
+                }
+            }, false);
+
+            
+            window.onload = function() {
+                var anchors = document.getElementsByTagName("a");
+
+                for (var i = 0; i < anchors.length; i++) {
+                    if(anchors[i].href.endsWith("/")){
+                    anchors[i].href = "/index.html" + "?focus={{ page.postid }}";
+                    }
+                }
+            }
+        </script>
+
+
+        <div class="desktop_info">
+            {% include info.html %}
+        </div>
+    </div>
+</div>
