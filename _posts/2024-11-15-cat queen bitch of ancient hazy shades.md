@@ -9,9 +9,9 @@ navigation_override: /
 aspect: 1/1
 domcol: ^300808
 spotisong: 6Ov1uV2DCipJwj4q04Wc75
-songname: Death Valley '69
+songname: Death Valley '69 (W/ Lydia Lunch)
 songautr: Sonic Youth
-postid: 81
+postid: 82
 ---
 
 <!--USER BEGIN 1-->
