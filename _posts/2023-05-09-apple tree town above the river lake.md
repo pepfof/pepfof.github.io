@@ -7,7 +7,7 @@ thumb: /assets/renders/thumb/thumb-2023_05_09_apple tree town above the river la
 title: Apple Tree Town Above The River Lake
 navigation_override: /
 aspect: 1/1
-domcol: ^2a3b29
+domcol: ^293a29
 spotisong: 3SLaKTDOeqbfVgYibofAVT
 songname: For That Moment
 songautr: Jan P. Muchow

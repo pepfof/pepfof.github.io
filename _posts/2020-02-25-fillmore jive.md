@@ -7,7 +7,7 @@ thumb: /assets/renders/thumb/thumb-2020_02_25_fillmore jive.png
 title: Fillmore Jive
 navigation_override: /
 aspect: 16/9
-domcol: ^160906
+domcol: ^140805
 spotisong: 2VcswmuA5mj5EATSRhoJzU
 songname: Fillmore Jive
 songautr: Pavement

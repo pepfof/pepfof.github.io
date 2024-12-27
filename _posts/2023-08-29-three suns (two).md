@@ -7,7 +7,7 @@ thumb: /assets/renders/thumb/thumb-2023_08_29_three suns (two).png
 title: Three Suns (Two)
 navigation_override: /
 aspect: 1/1
-domcol: ^837872
+domcol: ^827872
 spotisong: 6ItTYFQ8Ag4PQeRcqnlvn7
 songname: Passat Dream
 songautr: Pavement
