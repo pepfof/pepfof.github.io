@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2018_12_07_beginning remake.png
 title: Beginning Remake
 navigation_override: /
 aspect: 16/9
-domcol: ^120f0f
+domcol: ^000000
 spotisong: 5ESCA19hmVIshXqssRe7hO
 songname: Never Know
 songautr: Ozma
-postid: 90
+postid: 92
 ---
 
 <!--USER BEGIN 1-->

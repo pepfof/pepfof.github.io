@@ -12,13 +12,17 @@ layout: post_grid
     <!div class="post_grid_item" style="background-color: #{{ post.domcol | remove: "^" }};">
     {%endraw%}
     {%endcomment%}
-    <div class="post_grid_item" id = "post_{{ post.postid }}">
+    <div class="post_grid_item" id = "post_{{ post.postid }}" title = "{{ post.title }}">
         <a href="{{ post.url }}?fh=1">
 
             <img src="{{ post.thumb }}" class="thumbnail">
 
             <div class ="title">
-                {{post.title | truncate: 40, "..." | downcase }}
+              {% if post.titleoverride %}
+                {{ post.titleoverride }}
+              {% else %}
+                {{ post.title }}
+              {% endif %}
             </div>
 
             <div class ="desc">

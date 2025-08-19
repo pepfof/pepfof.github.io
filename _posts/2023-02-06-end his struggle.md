@@ -7,7 +7,7 @@ thumb: /assets/renders/thumb/thumb-2023_02_06_end his struggle.jpg
 title: End His Struggle
 navigation_override: /
 aspect: 9/16
-domcol: ^130a03
+domcol: ^000000
 spotisong: 57cXmeqCiKUF0GpJDFVAkt
 songname: Primal
 songautr: Slowdive

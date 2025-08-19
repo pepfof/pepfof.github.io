@@ -45,8 +45,8 @@ import numpy as np
 from skimage import io
 
 
-auth_manager = SpotifyClientCredentials()
-sp = spotipy.Spotify(auth_manager=auth_manager)
+#auth_manager = SpotifyClientCredentials()
+#sp = spotipy.Spotify(auth_manager=auth_manager)
 
 
 def parse_file(filename):
@@ -83,7 +83,9 @@ def parse_file(filename):
                 if(line[len(SAVE_ATTRIBUTES_GET[x]):].count(SAVE_ATTRIBUTES[x])==0):
                     specific_dict[SAVE_ATTRIBUTES[x]] = line[len(SAVE_ATTRIBUTES_GET[x]):]
                     #print("spotisong: ", specific_dict[IMG_MEDIA])  
-                
+    
+    #TODO: FIX!
+    '''            
     if(specific_dict[IMG_MEDIA] != ""):
         try:
             track = sp.track(specific_dict[IMG_MEDIA])
@@ -91,7 +93,7 @@ def parse_file(filename):
             specific_dict[IMG_MEDIA_ARTS] = ", ".join([x["name"] for x in track["artists"]])   
         except:
             pass   
-    
+    '''
     
     return specific_dict, region_contents    
     
@@ -165,22 +167,22 @@ def generate_post(filename:str):
         
     avg_col = (22,22,22)
     cols = []
-    img = Image.open("."+ASSET_PREFIX+"thumb/thumb-"+basename)
-    for y in [0, img.size[1]-1]:
-        for x in range(0, img.size[0]-1):
-            if(not vertical):
-                cols.append(img.getpixel((x,y)))
-            else:
-                cols.append(img.getpixel((y,x)))
+#    img = Image.open("."+ASSET_PREFIX+"thumb/thumb-"+basename)
+#    for y in [0, img.size[1]-1]:
+#        for x in range(0, img.size[0]-1):
+#            if(not vertical):
+#                cols.append(img.getpixel((x,y)))
+#            else:
+#                cols.append(img.getpixel((y,x)))
 
-    try:
-        avg_col = [sum(y) / len(y) for y in zip(*cols)]
-    except:
-        avg_col = (sum(cols)/len(cols),sum(cols)/len(cols),sum(cols)/len(cols))
-    dominant = avg_col
+#    try:
+#        avg_col = [sum(y) / len(y) for y in zip(*cols)]
+#    except:
+#        avg_col = (sum(cols)/len(cols),sum(cols)/len(cols),sum(cols)/len(cols))
+#    dominant = avg_col
     
-    #print(avg_col)
-    specific_dict[IMG_DOMCOL] = '^%02x%02x%02x' % (int(dominant[0]), int(dominant[1]), int(dominant[2]))
+#    print(avg_col)
+    specific_dict[IMG_DOMCOL] = '^000000'
     #dominant = (22,22,22)
     #specific_dict[IMG_DOMCOL] = '^%02x%02x%02x' % (int(dominant[0]), int(dominant[1]), int(dominant[2]))
     #if(domcol):
@@ -224,6 +226,8 @@ for fn in filenames:
     
     #print(sd)
     generate_file(TEMPLATE_POST, fn, sd, rd)
+    
+    print("\n\n\nDONE!\n---\nNOTES:\n\ndont forget to capitalize DESIRE on 2025 08 12!")
     
 
 

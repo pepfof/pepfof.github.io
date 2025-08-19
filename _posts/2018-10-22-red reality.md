@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2018_10_22_red reality.png
 title: Red Reality
 navigation_override: /
 aspect: 16/9
-domcol: ^54534f
+domcol: ^000000
 spotisong: 29BK3FAFBEfhO5w4ZlFrky
 songname: Memories
 songautr: Weezer
-postid: 64
+postid: 65
 ---
 
 <!--USER BEGIN 1-->

@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2024_11_15_cat queen bitch of ancient hazy sh
 title: Cat Queen Bitch Of Ancient Hazy Shades
 navigation_override: /
 aspect: 1/1
-domcol: ^310708
+domcol: ^000000
 spotisong: 6Ov1uV2DCipJwj4q04Wc75
 songname: Death Valley '69 (W/ Lydia Lunch)
 songautr: Sonic Youth
-postid: 87
+postid: 89
 ---
 
 <!--USER BEGIN 1-->

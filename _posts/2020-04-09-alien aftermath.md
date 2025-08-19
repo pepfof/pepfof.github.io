@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2020_04_09_alien aftermath.png
 title: Alien Aftermath
 navigation_override: /
 aspect: 16/9
-domcol: ^010101
+domcol: ^000000
 spotisong: 3038NH8wdXx0owuMdVTTrI
 songname: ..and the Addled Abstraction of Being
 songautr: Psychedelic Porn Crumpets
-postid: 54
+postid: 55
 ---
 
 <!--USER BEGIN 1-->

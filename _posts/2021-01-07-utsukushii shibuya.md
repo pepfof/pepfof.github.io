@@ -7,7 +7,7 @@ thumb: /assets/renders/thumb/thumb-2021_01_07_utsukushii shibuya.png
 title: Utsukushii Shibuya
 navigation_override: /
 aspect: 3/4
-domcol: ^4e5152
+domcol: ^000000
 spotisong: 2hQ6i7d2Fo0bsLxpWBcQIq
 songname: Utsukushii Shibuya
 songautr: Ozma

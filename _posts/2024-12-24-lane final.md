@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2024_12_24_lane final.png
 title: Lane Final
 navigation_override: /
 aspect: 1/1
-domcol: ^0f0c0c
+domcol: ^000000
 spotisong: 1tyev3ThkAmJ9GSrUm88Qi
 songname: Dirty Boy
 songautr: Cardiacs
-postid: 51
+postid: 52
 ---
 
 <!--USER BEGIN 1-->

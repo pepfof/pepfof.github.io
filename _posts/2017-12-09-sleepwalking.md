@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2017_12_09_2_sleepwalking.png
 title: Sleepwalking
 navigation_override: /
 aspect: 16/9
-domcol: ^3d3028
+domcol: ^000000
 spotisong: 0j4mJiFv3L87bl9X5MPMsm
 songname: Sleepwalking
 songautr: The Chain Gang Of 1974
-postid: 67
+postid: 68
 ---
 
 <!--USER BEGIN 1-->

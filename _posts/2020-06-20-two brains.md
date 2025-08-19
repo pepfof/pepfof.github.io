@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2020_06_20_two brains.png
 title: Two Brains
 navigation_override: /
 aspect: 16/9
-domcol: ^393a3b
+domcol: ^000000
 spotisong: 3v08uQHnH9BYielRoDCxTs
 songname: The Man with Two Brains
 songautr: The Rentals
-postid: 61
+postid: 62
 ---
 
 <!--USER BEGIN 1-->

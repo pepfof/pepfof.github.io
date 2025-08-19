@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2018_11_12_purification of water.png
 title: Purification Of Water
 navigation_override: /
 aspect: 16/9
-domcol: ^7d7a88
+domcol: ^000000
 spotisong: 4bWoFZESYj916QHz5kKHTE
 songname: The Purification Of Water
 songautr: Rivers Cuomo
-postid: 47
+postid: 48
 ---
 
 <!--USER BEGIN 1-->

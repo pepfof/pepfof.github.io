@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2019_05_11_songs of inaudible trucks and cars
 title: Songs Of Inaudible Trucks And Cars
 navigation_override: /
 aspect: 16/9
-domcol: ^685b15
+domcol: ^000000
 spotisong: 
 songname: Lorraine
 songautr: OZMA
-postid: 105
+postid: 107
 ---
 
 <!--USER BEGIN 1-->

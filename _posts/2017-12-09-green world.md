@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2017_12_09_3_green world.png
 title: Green World
 navigation_override: /
 aspect: 16/9
-domcol: ^323c50
+domcol: ^000000
 spotisong: 4hNPMfFHauPIbOKvdYqFt7
 songname: O Green World
 songautr: Gorillaz
-postid: 65
+postid: 66
 ---
 
 <!--USER BEGIN 1-->

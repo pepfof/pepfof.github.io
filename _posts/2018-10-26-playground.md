@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2018_10_26_playground.jpg
 title: Playground
 navigation_override: /
 aspect: 16/9
-domcol: ^030302
+domcol: ^000000
 spotisong: 6HWPoZqorCptSAgRpjZEOD
 songname: Last Dance
 songautr: Ozma
-postid: 96
+postid: 98
 ---
 
 <!--USER BEGIN 1-->

@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2022_06_02_black robots.png
 title: Black Robots
 navigation_override: /
 aspect: 16/13
-domcol: ^1b1611
+domcol: ^000000
 spotisong: 0ccCwNzXvr1Yoz91vKz31Z
 songname: Yoshimi Battles the Pink Robots, Pt. 1
 songautr: The Flaming Lips
-postid: 63
+postid: 64
 ---
 
 <!--USER BEGIN 1-->

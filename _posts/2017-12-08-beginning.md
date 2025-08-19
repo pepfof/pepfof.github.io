@@ -7,7 +7,7 @@ thumb: /assets/renders/thumb/thumb-2017_12_08_beginning.png
 title: Beginning
 navigation_override: /
 aspect: 16/9
-domcol: ^191719
+domcol: ^000000
 spotisong: 2pw9RZWZibttZzoFhwjuy6
 songname: Every Planet We Reach Is Dead
 songautr: Gorillaz

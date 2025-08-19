@@ -7,7 +7,7 @@ thumb: /assets/renders/thumb/thumb-2023_11_24_three suns (three).png
 title: Three Suns (Three)
 navigation_override: /
 aspect: 1/1
-domcol: ^150b00
+domcol: ^000000
 spotisong: 3tbGyZx1WEhQGQRxyUNf2W
 songname: That's All (Edit)
 songautr: KMFDM

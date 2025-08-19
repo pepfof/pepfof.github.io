@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2020_07_20_nowhere nowhen.png
 title: Nowhere Nowhen
 navigation_override: /
 aspect: 16/9
-domcol: ^050507
+domcol: ^000000
 spotisong: 
 songname: Talkative
 songautr: pepfof
-postid: 60
+postid: 61
 ---
 
 <!--USER BEGIN 1-->

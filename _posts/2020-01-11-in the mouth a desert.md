@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2020_01_11_in the mouth a desert.png
 title: In The Mouth A Desert
 navigation_override: /
 aspect: 16/9
-domcol: ^413f3b
+domcol: ^000000
 spotisong: 4HVJbdy5mP3OiOLmcN8zeg
 songname: In The Mouth A Desert
 songautr: Pavement
-postid: 72
+postid: 73
 ---
 
 <!--USER BEGIN 1-->

@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2025_04_04_sometimes a pony gets depressed.pn
 title: Sometimes A Pony Gets Depressed
 navigation_override: /
 aspect: 1/1
-domcol: ^0d0a07
+domcol: ^000000
 spotisong: 3iK3igZWOthPGPPHiDqcu0
 songname: Sometimes A Pony Gets Depressed
 songautr: Silver Jews
-postid: 45
+postid: 46
 ---
 
 <!--USER BEGIN 1-->

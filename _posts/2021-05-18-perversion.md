@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2021_05_18_perversion.jpg
 title: Perversion
 navigation_override: /
 aspect: 16/9
-domcol: ^a19b56
+domcol: ^000000
 spotisong: 1sqroxs7lvF3GLmmskWOvp
 songname: 68 State
 songautr: Gorillaz
-postid: 58
+postid: 59
 ---
 
 <!--USER BEGIN 1-->

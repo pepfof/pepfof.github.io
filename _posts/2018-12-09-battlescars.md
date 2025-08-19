@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2018_12_09_2_battlescars.png
 title: Battlescars
 navigation_override: /
 aspect: 16/9
-domcol: ^393a24
+domcol: ^000000
 spotisong: 7slAGFo4C0RlFo1CAT36b0
 songname: Battlescars
 songautr: Ozma
-postid: 76
+postid: 77
 ---
 
 <!--USER BEGIN 1-->

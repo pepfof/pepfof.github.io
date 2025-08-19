@@ -7,11 +7,11 @@ thumb: /assets/renders/thumb/thumb-2017_12_09_4_shooting stars.png
 title: Shooting Stars
 navigation_override: /
 aspect: 16/9
-domcol: ^473181
+domcol: ^000000
 spotisong: 7tOcPDj3vyopZ404pY6UuP
 songname: Shooting Stars
 songautr: Bag Raiders
-postid: 84
+postid: 86
 ---
 
 <!--USER BEGIN 1-->
