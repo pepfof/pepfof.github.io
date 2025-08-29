@@ -85,40 +85,7 @@ layout: post_grid
                                 // Remove default HTML title tooltip; we'll use a custom tooltip instead
                                 logoAnchor.removeAttribute('title');
 
-                                // Create a real tooltip element so we can measure and clamp to viewport
-                                var tip = document.createElement('div');
-                                tip.className = 'logo-tip show'; // visible initially, then hide; CSS will fade on hover
-                                tip.textContent = 'Back to post';
-                                logoAnchor.appendChild(tip);
-
-                                // Position centered under the visible overlay image if present
-                                try {
-                                    var overlayAlt = document.querySelector('.logo .logoimg-overlay-alt');
-                                    var overlayBase = document.querySelector('.logo .logoimg-overlay');
-                                    var anchorRect = logoAnchor.getBoundingClientRect();
-                                    var refEl = (overlayAlt && getComputedStyle(overlayAlt).opacity !== '0') ? overlayAlt : overlayBase;
-                                    var refRect = (refEl ? refEl.getBoundingClientRect() : anchorRect);
-                                    var midX = refRect.left + (refRect.width / 2);
-                                    var leftWithinAnchor = midX - anchorRect.left;
-                                    tip.style.left = leftWithinAnchor + 'px';
-                                    tip.style.top = '100%';
-                                    tip.style.transform = 'translate(-50%, 8px)';
-
-                                    // After it's in the DOM, measure and clamp if overflowing the left viewport edge
-                                    var tipRect = tip.getBoundingClientRect();
-                                    var minViewportLeft = 8; // padding from left edge
-                                    if (tipRect.left < minViewportLeft) {
-                                        tip.classList.add('clamp-left');
-                                        var clampedLeft = Math.max(minViewportLeft - anchorRect.left, 0);
-                                        tip.style.left = clampedLeft + 'px';
-                                        tip.style.transform = 'translate(0, 8px)';
-                                    }
-                                } catch (_) { /* noop */ }
-
-                                // Hide initial tip after a short delay; keep element for hover
-                                setTimeout(function(){
-                                    if (tip) tip.classList.remove('show');
-                                }, 2000);
+                                // No tooltip; keep behavior minimal
                             }
                         }
                     }
