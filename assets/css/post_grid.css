@@ -62,7 +62,8 @@ ul {
   color: darkgray;
   font-size: 10px;
   margin: auto;
-  padding-left: 20px;
+  margin-left: 0px;
+  padding-left: 0px;
   height: 50%;
   flex: 1 0 auto;
   margin-right: 10%;
@@ -72,11 +73,64 @@ ul {
   display: inline-block;
   color: darkgray;
   font-size: 10px;
-  margin-left: 20px;
+  margin-left: 0px;
   height: 100%;
   margin: auto;
 }
 
+/* Decorative overlay image that sits above the standard logo and can overflow */
+.logo {
+  position: relative; /* establish containing block for overlay */
+}
+
+.logo .logoimg-overlay {
+  position: absolute;
+  left: 16px;
+  top: 50%; /* vertically center within logo container */
+  height: 200%; /* larger than container to overlap below */
+  width: auto;
+  z-index: 150; /* above header/nav */
+  pointer-events: none; /* don't block clicks */
+  transform: translate(-10px, -50%); /* nudge left and center vertically */
+  margin: 0; /* override generic .logo img margins */
+}
+
+/* Secondary overlay for hover swap */
+.logo .logoimg-overlay-alt {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  height: 200%;
+  width: auto;
+  z-index: 151; /* above the base overlay */
+  pointer-events: none;
+  transform: translate(-10px, -50%);
+  margin: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 10ms ease-in-out;
+}
+
+/* Hover state: swap overlays */
+.logo:hover .logoimg-overlay {
+  opacity: 0;
+  transition: opacity 10ms ease-in-out;
+}
+
+.logo:hover .logoimg-overlay-alt {
+  opacity: 1;
+}
+
+/* Persistent alternate state when logo points back to a post */
+.logo.logo--backlink .logoimg-overlay {
+  opacity: 0;
+}
+
+.logo.logo--backlink .logoimg-overlay-alt {
+  opacity: 1;
+}
+
+/* One-time helper tooltip element under the logo when it becomes a backlink */
+/* (tooltip removed) */
 /* Nav menu */
 .nav {
   width: 100%;
@@ -157,6 +211,9 @@ ul {
   opacity: 100%;
 }
 
+/* body:has(.side-menu:checked) { */
+/*   overflow: hidden; */
+/* } */
 .desktop_info {
   display: none;
 }
@@ -266,6 +323,18 @@ ul {
     margin-bottom: 25px;
     width: fit-content;
   }
+  .logo .logoimg-overlay {
+    top: 50%;
+    height: 200%; /* make it bigger on desktop for more overlap */
+    transform: translate(-20px, -50%);
+    margin: 0;
+  }
+  .logo .logoimg-overlay-alt {
+    top: 50%;
+    height: 200%;
+    transform: translate(-20px, -50%);
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1600px) {
   .page_content {
@@ -304,16 +373,19 @@ ul {
 
 @keyframes post_focus {
   0% {
-    -moz-box-shadow: 0px 0px 10px -2px white;
-    -webkit-box-shadow: 0px 0px 10px -2px white;
-    box-shadow: 0px 0px 10px -2px white;
+    -moz-box-shadow: 0px 0px 30px -2px rgba(235, 170, 18, 0.462745098);
+    -webkit-box-shadow: 0px 0px 30px -2px rgba(235, 170, 18, 0.462745098);
+    box-shadow: 0px 0px 30px -2px rgba(235, 170, 18, 0.462745098);
     background-color: #292929;
+    /*outline: 1px solid #343434;*/
   }
-  50% {
+  90% {
     background-color: #292929;
+    /*outline: 1px solid #343434;*/
   }
   100% {
     background-color: #222222;
+    /*outline: 1px solid #343434;*/
     -moz-box-shadow: 0px 0px 5px -2px black;
     -webkit-box-shadow: 0px 0px 5px -2px black;
     box-shadow: 0px 0px 5px -2px black;
@@ -329,8 +401,14 @@ ul {
   -moz-box-shadow: 0px 0px 5px -2px black;
   -webkit-box-shadow: 0px 0px 5px -2px black;
   box-shadow: 0px 0px 5px -2px black;
-  transition: all 1s;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, outline-color 0.2s ease;
   min-width: 0;
+}
+
+/* Persistent subtle highlight for focused card */
+.post_grid_item--focused {
+  outline: 1px solid rgba(235, 170, 18, 0.462745098); /* match tooltip border color */
+  box-shadow: 0 0 0 1px rgba(235, 170, 18, 0.18) inset, 0 0 10px -6px rgba(235, 170, 18, 0.35), 0 0 6px -2px rgba(0, 0, 0, 0.8);
 }
 
 .post_grid_item:hover {
