@@ -1,2 +1,2 @@
 ---
-BUNDLE_PATH: "/home/pepfof/.local/share/gem"
+BUNDLE_PATH: "vendor/bundle"

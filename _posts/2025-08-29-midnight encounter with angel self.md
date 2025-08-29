@@ -2,9 +2,9 @@
 layout: post
 author: pepfof
 category: render
-render: /assets/renders/2025_08_29_midnight meeting with angel self.png
-thumb: /assets/renders/thumb/thumb-2025_08_29_midnight meeting with angel self.png
-title: Midnight Meeting With Angel Self
+render: /assets/renders/2025_08_29_midnight encounter with angel self.png
+thumb: /assets/renders/thumb/thumb-2025_08_29_midnight encounter with angel self.png
+title: Midnight Encounter With Angel Self
 navigation_override: /
 aspect: 1/1
 domcol: ^000000

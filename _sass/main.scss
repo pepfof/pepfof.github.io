@@ -129,6 +129,40 @@ ul{
 .logo.logo--backlink .logoimg-overlay-alt{
   opacity: 1;
 }
+
+/* One-time helper tooltip element under the logo when it becomes a backlink */
+.logo .logo-tip{
+  position: absolute;
+  left: 50%; /* default center; JS adjusts if near edge */
+  top: 100%;
+  transform: translate(-50%, 8px);
+  background: rgba(46,46,46,1);
+  color: #ebaa12;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  border: 1px solid #ebaa12;
+  z-index: 160;
+  opacity: 0; /* hidden by default */
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.logo .logo-tip.clamp-left{
+  left: 8px;      /* anchored to the left inside the logo anchor */
+  transform: translate(0, 8px); /* no centering shift */
+}
+
+/* Hover fades the tooltip in */
+.logo.logo--backlink:hover .logo-tip{
+  opacity: 1;
+}
+
+/* Initial 'show' state briefly after load */
+.logo .logo-tip.show{
+  opacity: 1;
+}
 /* Nav menu */
 .nav{
   width: 100%;

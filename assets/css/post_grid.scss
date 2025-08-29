@@ -18,19 +18,19 @@
 
 @keyframes post_focus {
     0% {
-        -moz-box-shadow: 0px 0px 30px -2px #eee4cd;
-        -webkit-box-shadow: 0px 0px 30px -2px #eee4cd;
-        box-shadow: 0px 0px 30px -2px #eee4cd;
+        -moz-box-shadow: 0px 0px 30px -2px #ebaa1276;
+        -webkit-box-shadow: 0px 0px 30px -2px #ebaa1276;
+        box-shadow: 0px 0px 30px -2px #ebaa1276;
         background-color: #292929;
-    outline: 1px solid #343434;
+    /*outline: 1px solid #343434;*/
     }
     90% {
         background-color: #292929;
-    outline: 1px solid #343434;
+    /*outline: 1px solid #343434;*/
     }
     100% {
         background-color: #222222;
-    outline: 1px solid #343434;
+    /*outline: 1px solid #343434;*/
 
         -moz-box-shadow: 0px 0px 5px -2px black;
         -webkit-box-shadow: 0px 0px 5px -2px black;
@@ -48,14 +48,14 @@
     -moz-box-shadow: 0px 0px 5px -2px black;
     -webkit-box-shadow: 0px 0px 5px -2px black;
     box-shadow: 0px 0px 5px -2px black;
-    transition: all 1s ;
+    transition: background-color .2s ease, box-shadow .2s ease, outline-color .2s ease;
     min-width: 0
 }
 
 /* Persistent subtle highlight for focused card */
 .post_grid_item--focused {
-    outline: 1px solid #343434;
-    box-shadow: 0 0 0 1px rgba(255, 218, 131, 0.12) inset, 0 0 6px -2px rgba(0,0,0,0.8);
+    outline: 1px solid #ebaa1276; /* match tooltip border color */
+    box-shadow: 0 0 0 1px rgba(235, 170, 18, 0.18) inset, 0 0 10px -6px rgba(235, 170, 18, 0.35), 0 0 6px -2px rgba(0,0,0,0.8);
 }
 
 .post_grid_item:hover {
