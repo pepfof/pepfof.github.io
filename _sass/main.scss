@@ -121,6 +121,14 @@ ul{
 .logo:hover .logoimg-overlay-alt{
   opacity: 1;
 }
+
+/* Persistent alternate state when logo points back to a post */
+.logo.logo--backlink .logoimg-overlay{
+  opacity: 0;
+}
+.logo.logo--backlink .logoimg-overlay-alt{
+  opacity: 1;
+}
 /* Nav menu */
 .nav{
   width: 100%;

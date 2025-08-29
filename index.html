@@ -67,8 +67,28 @@ layout: post_grid
                 var url = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 var newurl = url.split("?")[0];
                 window.history.replaceState({path:newurl},'',newurl);
-                document.getElementById("post_"+pid).scrollIntoView({ behavior: "smooth", block: "center", inline:"center"});
+                document.getElementById("post_"+pid).scrollIntoView({ behavior: "auto", block: "center", inline:"center"});
                 document.getElementById("post_"+pid).style = "animation: 2s ease-out 0s 1 post_focus";
+                document.getElementById("post_"+pid).classList.add("post_grid_item--focused");
+
+                // Also retarget the logo link to the focused post and indicate alternate state
+                try {
+                    var postEl = document.getElementById("post_" + pid);
+                    if (postEl) {
+                        var postAnchor = postEl.querySelector('a');
+                        var logoAnchor = document.querySelector('a.logo');
+                        if (postAnchor && logoAnchor) {
+                            var postHref = (postAnchor.getAttribute('href') || '').split('?')[0];
+                            if (postHref && postHref !== '/') {
+                                logoAnchor.setAttribute('href', postHref);
+                                logoAnchor.classList.add('logo--backlink'); // make alt overlay visible
+                                logoAnchor.setAttribute('title', 'Back to focused post');
+                            }
+                        }
+                    }
+                } catch (e) {
+                    // no-op: if anything fails here, keep default logo behavior
+                }
             }
         </script>
 </div>
