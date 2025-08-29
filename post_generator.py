@@ -226,9 +226,9 @@ for fn in filenames:
     
     #print(sd)
     generate_file(TEMPLATE_POST, fn, sd, rd)
-    
-    print("\n\n\nDONE!\n---\nNOTES:\n\ndont forget to capitalize DESIRE on 2025 08 12!")
-    
+
+    print("\n\n\nDONE!\n---\nNOTES:\n\ndont forget to capitalize DESIRE on 2025 08 12 & titleoverride: DESIRE!")
+
 
 
 #for i in *.jpg; do convert -thumbnail 160 $i /thumb/thumb-$i; done;
