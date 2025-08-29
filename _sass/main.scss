@@ -65,7 +65,8 @@ ul{
   color: darkgray;
   font-size: 10px;
   margin:auto;
-  padding-left: 20px;
+  margin-left:0px;
+  padding-left: 0px;
   height: 50%;
   flex: 1 0 auto;
   margin-right: 10%;  
@@ -75,9 +76,50 @@ ul{
   display: inline-block;
   color: darkgray;
   font-size: 10px;
-  margin-left: 20px;
+  margin-left: 00px;
   height:100%;
   margin:auto;
+}
+
+/* Decorative overlay image that sits above the standard logo and can overflow */
+.logo {
+  position: relative; /* establish containing block for overlay */
+}
+
+.logo .logoimg-overlay{
+  position: absolute;
+  left: 16px;
+  top: 50%; /* vertically center within logo container */
+  height: 200%; /* larger than container to overlap below */
+  width: auto;
+  z-index: 150; /* above header/nav */
+  pointer-events: none; /* don't block clicks */
+  transform: translate(-10px, -50%); /* nudge left and center vertically */
+  margin: 0; /* override generic .logo img margins */
+}
+
+/* Secondary overlay for hover swap */
+.logo .logoimg-overlay-alt{
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  height: 200%;
+  width: auto;
+  z-index: 151; /* above the base overlay */
+  pointer-events: none;
+  transform: translate(-10px, -50%);
+  margin: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 10ms ease-in-out;
+}
+
+/* Hover state: swap overlays */
+.logo:hover .logoimg-overlay{
+  opacity: 0;
+  transition: opacity 10ms ease-in-out;
+}
+.logo:hover .logoimg-overlay-alt{
+  opacity: 1;
 }
 /* Nav menu */
 .nav{
@@ -166,9 +208,9 @@ ul{
   opacity: 100%;
 }
 
-body:has(.side-menu:checked) {
-//overflow: hidden;
-}
+/* body:has(.side-menu:checked) { */
+/*   overflow: hidden; */
+/* } */
 
 .desktop_info{
   display: none;
@@ -285,6 +327,20 @@ body:has(.side-menu:checked) {
     margin:auto;
     margin-bottom: 25px;
     width:fit-content;
+  }
+
+  .logo .logoimg-overlay{
+    top: 50%;
+    height: 200%; /* make it bigger on desktop for more overlap */
+    transform: translate(-20px, -50%);
+    margin: 0;
+  }
+
+  .logo .logoimg-overlay-alt{
+    top: 50%;
+    height: 200%;
+    transform: translate(-20px, -50%);
+    margin: 0;
   }
 }
 

@@ -18,12 +18,12 @@
 
 @keyframes post_focus {
     0% {
-        -moz-box-shadow: 0px 0px 10px -2px white;
-        -webkit-box-shadow: 0px 0px 10px -2px white;
-        box-shadow: 0px 0px 10px -2px white;
+        -moz-box-shadow: 0px 0px 30px -2px #ffda83;
+        -webkit-box-shadow: 0px 0px 30px -2px #ffda83;
+        box-shadow: 0px 0px 30px -2px #ffda83;
         background-color: #292929;
     }
-    50% {
+    90% {
         background-color: #292929;
     }
     100% {
